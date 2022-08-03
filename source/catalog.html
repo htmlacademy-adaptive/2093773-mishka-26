@@ -9,40 +9,28 @@
       <a class="header__logo" href="index.html">
         <img src="#" width="86" height="35" alt="Логотип Mishka." />
       </a>
-      <button class="header__toggle header__toggle--closed" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="header__mobile-menu header__mobile-menu--closed">
-        <nav class="header__links header-navigation">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__link" href="catalog.html">Каталог товаров</a>
+      <!--Открытие меню происходит при клике на кнопку-бургер menu__toggle, с контейнера menu снимается класс "menu--closed"-->
+      <div class="header__menu menu menu--closed">
+        <button class="menu__toggle menu__toggle--burger" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <nav class="menu__navigation">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="header__item">
-              <a class="header__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link header__link--bottom" href="#"
-                >Новые поступления</a
-              >
-            </li>
-            <li class="header__item">
-              <a class="header__link header__link--bottom" href="#"
-                >Распродажа</a
-              >
+            <li class="menu__item">
+              <a class="menu__link" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
         </nav>
-        <div class="header__links header-user-links">
-          <a class="header__link" href="#">Поиск по сайту</a>
-          <a class="header__link" href="#">Корзина: пока пуста</a>
-          <p class="header__delivery header__delivery--bottom">
-            Бесплатная доставка по России
-          </p>
+        <div class="menu__links">
+          <a class="menu__link" href="#">Поиск по сайту</a>
+          <a class="menu__link" href="#">Корзина: пока пуста</a>
         </div>
       </div>
     </header>
-    <main class="main-container">
+    <main class="main-catalog-container">
       <header class="catalog-header container">
         <h1 class="catalog-header__title">Каталог товаров</h1>
       </header>
@@ -65,9 +53,9 @@
               >
               <p class="catalog-item__text">Рост 30 см, вес 200 г</p>
               <p class="catalog-item__price">1 200 руб.</p>
-              <button class="catalog-item__button button button-catalog">
+              <a class="catalog-item__button button button-catalog">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item">
@@ -86,9 +74,9 @@
               >
               <p class="catalog-item__text">Диаметр 15 см, высота 10 см</p>
               <p class="catalog-item__price">690 руб.</p>
-              <button class="catalog-item__button button button-catalog">
+              <a class="catalog-item__button button button-catalog">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </div>
           </li>
           <li class="catalog__item">
@@ -109,15 +97,17 @@
               >
               <p class="catalog-item__text">Диаметр 30 см, высота 30 см</p>
               <p class="catalog-item__price">1 500 руб.</p>
-              <button class="catalog-item__button button button-catalog">
+              <a class="catalog-item__button button button-catalog">
                 <span class="visually-hidden">Добавить в корзину</span>
-              </button>
+              </a>
             </div>
           </li>
         </ul>
       </section>
       <section class="production container">
-        <h2 class="production__title production__title--camera">Процесс производства</h2>
+        <h2 class="production__title production__title--camera">
+          Процесс производства
+        </h2>
         <div class="production__video-wrapper">
           <video class="production__video" poster="#" preload="auto">
             <source src="#" type="video/webm" />
@@ -127,14 +117,16 @@
             <span class="visually-hidden">Воспроизвести видео</span>
           </button>
         </div>
-        <p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-        <button class="production__button button button--primary">Сделать заказ</button>
+        <p class="production__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+          о том, как появляются наши товары.
+        </p>
+        <a class="production__button button button--primary">
+          Сделать заказ
+        </a>
       </section>
     </main>
     <footer class="footer container">
-      <a class="footer__logo footer__logo--mobile">
-        <img src="#" width="102" height="34" alt="Логотип Mishka." />
-      </a>
       <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -169,62 +161,63 @@
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
         >
+        <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </footer>
-       <!-- Открытие модального окна происходит при клике на кнопку корзины "catalog-item__button", с блока "modal-container" снимается класс "modal-container--close" на JS -->
-       <div class="modal-container modal-container--close">
-        <div class="modal-container__modal modal">
-          <h2 class="modal__title">Добавить в корзину</h2>
-          <form
-            class="modal__form"
-            action="https://echo.htmlacademy.ru/"
-            method="post"
-          >
-            <fieldset class="modal__filter">
-              <legend class="modal__filter-name">Выберите размер:</legend>
-              <ul class="madal__list">
-                <li class="modal__item modal__item--size-s">
-                  <label class="madal__control">
-                    <input
-                      class="modal__input"
-                      type="radio"
-                      name="size"
-                      value="size-s"
-                      checked
-                    />
-                    <span class="modal__control-label">S</span>
-                  </label>
-                </li>
-                <li class="modal__item modal__item--size-m">
-                  <label class="madal__control">
-                    <input
-                      class="modal__input"
-                      type="radio"
-                      name="size"
-                      value="size-m"
-                    />
-                    <span class="modal__control-label">M</span>
-                  </label>
-                </li>
-                <li class="modal__item modal__item--size-l">
-                  <label class="madal__control">
-                    <input
-                      class="modal__input"
-                      type="radio"
-                      name="size"
-                      value="size-l"
-                    />
-                    <span class="modal__control-label">L</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <button class="madal__button button button-secondary" type="submit">
-              Добавить
-            </button>
-          </form>
-        </div>
+    <!-- Открытие модального окна происходит при клике на кнопку корзины "catalog-item__button", с блока "modal-container" снимается класс "modal-container--close" на JS -->
+    <div class="modal-container modal-container--close">
+      <div class="modal-container__modal modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form
+          class="modal__form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <fieldset class="modal__filter">
+            <legend class="modal__filter-name">Выберите размер:</legend>
+            <ul class="madal__list">
+              <li class="modal__item modal__item--size-s">
+                <label class="madal__control">
+                  <input
+                    class="modal__input"
+                    type="radio"
+                    name="size"
+                    value="size-s"
+                    checked
+                  />
+                  <span class="modal__control-label">S</span>
+                </label>
+              </li>
+              <li class="modal__item modal__item--size-m">
+                <label class="madal__control">
+                  <input
+                    class="modal__input"
+                    type="radio"
+                    name="size"
+                    value="size-m"
+                  />
+                  <span class="modal__control-label">M</span>
+                </label>
+              </li>
+              <li class="modal__item modal__item--size-l">
+                <label class="madal__control">
+                  <input
+                    class="modal__input"
+                    type="radio"
+                    name="size"
+                    value="size-l"
+                  />
+                  <span class="modal__control-label">L</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <a class="madal__button button button-secondary" type="submit">
+            Добавить
+          </a>
+        </form>
       </div>
+    </div>
   </body>
 </html>
