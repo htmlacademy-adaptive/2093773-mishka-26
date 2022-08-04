@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mishka | Каталог товаров</title>
   </head>
   <body>
     <header class="header container">
       <a class="header__logo" href="index.html">
-        <img src="../images/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Mishka." />
+        <img
+          src="../images/logo/mishka-logo-mobile.svg"
+          width="86"
+          height="35"
+          alt="Логотип Mishka."
+        />
       </a>
       <!--Открытие меню происходит при клике на кнопку-бургер menu__toggle, с контейнера menu снимается класс "menu--closed"-->
       <div class="header__menu menu menu--closed">
         <button class="menu__toggle menu__toggle--burger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+          <span class="visually-hidden">Открыть/закрыть меню</span>
         </button>
         <nav class="menu__navigation">
           <ul class="menu__list">
@@ -109,7 +116,11 @@
           Процесс производства
         </h2>
         <div class="production__video-wrapper">
-          <video class="production__video" poster="../images/video/video-mobile.jpg" preload="auto">
+          <video
+            class="production__video"
+            poster="../images/video/video-mobile.jpg"
+            preload="auto"
+          >
             <source src="#" type="video/webm" />
             <source src="#" type="video/mp4" />
           </video>
@@ -161,7 +172,7 @@
           class="copyright__link"
           href="https://htmlacademy.ru/intensive/adaptive"
         >
-        <span class="visually-hidden">HTML Academy</span>
+          <span class="visually-hidden">HTML Academy</span>
         </a>
       </div>
     </footer>
@@ -176,9 +187,9 @@
         >
           <fieldset class="modal__filter">
             <legend class="modal__filter-name">Выберите размер:</legend>
-            <ul class="madal__list">
+            <ul class="modal__list">
               <li class="modal__item modal__item--size-s">
-                <label class="madal__control">
+                <label class="modal__control">
                   <input
                     class="modal__input"
                     type="radio"
@@ -190,7 +201,7 @@
                 </label>
               </li>
               <li class="modal__item modal__item--size-m">
-                <label class="madal__control">
+                <label class="modal__control">
                   <input
                     class="modal__input"
                     type="radio"
@@ -201,7 +212,7 @@
                 </label>
               </li>
               <li class="modal__item modal__item--size-l">
-                <label class="madal__control">
+                <label class="modal__control">
                   <input
                     class="modal__input"
                     type="radio"
@@ -213,7 +224,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="madal__button button button-secondary" type="submit">
+          <button class="modal__button button button-secondary" type="submit">
             Добавить
           </button>
         </form>
