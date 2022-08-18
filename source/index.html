@@ -46,7 +46,7 @@
           <li class="welcome__item">
             <a class="welcome__link" href="#">Предметы интерьера</a>
           </li>
-          <li class="welcome__item">
+          <li class="welcome__item welcome__item--darken">
             <a class="welcome__link" href="#">Детские игрушки</a>
           </li>
         </ul>
@@ -110,7 +110,7 @@
       <section class="reviews container">
         <h2 class="reviews__title title">Отзывы</h2>
         <ul class="reviews__list">
-          <li class="reviews__item">
+          <li class="reviews__item reviews__item--slide-1">
             <blockquote class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко
               такого количества лайков, как у популярных инстамамочек. В
@@ -123,7 +123,7 @@
               <a class="reviews__link" href="#">@misssssiskras</a>
             </cite>
           </li>
-          <li class="reviews__item">
+          <li class="reviews__item reviews__item--slide-2">
             <blockquote class="reviews__text">
               Я сестра молодой мамы, но всё равно фотографии не набирали и
               близко такого количества лайков, как у популярных инстамамочек. В
@@ -136,7 +136,7 @@
               <a class="reviews__link" href="#">@misssssiskras2</a>
             </cite>
           </li>
-          <li class="reviews__item">
+          <li class="reviews__item reviews__item--slide-3">
             <blockquote class="reviews__text">
               Я двоюродная сестра молодой мамы, но всё равно фотографии не
               набирали и близко такого количества лайков, как у популярных
@@ -150,15 +150,15 @@
             </cite>
           </li>
         </ul>
-        <div class="reviews__buttons reviews-buttons">
+        <div class="reviews__buttons reviews-button">
           <button
-            class="reviews-buttons__button reviews-buttons__button--prew"
+            class="reviews-button__button reviews-button__button--prew"
             type="button"
           >
             <span class="visually-hidden">Назад</span>
           </button>
           <button
-            class="reviews-buttons__button reviews-buttons__button--next"
+            class="reviews-button__button reviews-button__button--next"
             type="button"
           >
             <span class="visually-hidden">Вперед</span>
@@ -169,7 +169,7 @@
       <section class="contacts container">
         <h2 class="contacts__title title">Контакты</h2>
         <div class="contacts__text">
-          <h3 class="contacts__mail">e-mail:</h3>
+          <h3 class="contacts__mail subtitle">e-mail:</h3>
           <p class="contacts__mail-shop">
             <a
               class="contacts__mail-shop-link"
@@ -177,7 +177,7 @@
               >info@mimimishkashop.ru</a
             >
           </p>
-          <h3 class="contacts__address">адрес:</h3>
+          <h3 class="contacts__address subtitle">адрес:</h3>
           <address class="contacts__address-shop">
             г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101
           </address>
@@ -234,9 +234,9 @@
       </div>
     </footer>
     <!-- Открытие модального окна происходит при клике на кнопку заказа товара недели "week-product__button", с блока "modal-container" снимается класс "modal-container--close" на JS -->
-    <div class="modal-container modal-container--close">
+    <div class="modal-container modal-container--close container">
       <div class="modal-container__modal modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
+        <h2 class="modal__title title">Добавить в корзину</h2>
         <form
           class="modal__form"
           action="https://echo.htmlacademy.ru/"
@@ -281,7 +281,7 @@
               </li>
             </ul>
           </fieldset>
-          <button class="modal__button button button-secondary" type="submit">
+          <button class="modal__button button button--secondary" type="submit">
             Добавить
           </button>
         </form>

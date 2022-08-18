@@ -1,0 +1,18 @@
+.button {
+  margin: 0;
+  padding: 16px;
+  width: 260px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid $color-charcoal;
+  display: block;
+
+  &--secondary {
+    color: $color-default-white;
+    background-color: $color-downy;
+    border: none;
+  }
+}
