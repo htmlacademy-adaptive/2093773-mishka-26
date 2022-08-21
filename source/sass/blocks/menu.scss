@@ -1,0 +1,21 @@
+.menu__toggle {
+  width: 21px;
+  height: 20px;
+  background-color: $color-default-white;
+}
+
+.menu__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu__link {
+  margin: 0 -30px;
+  padding: 29px 33px 27px 76px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $color-default-black;
+  text-decoration: none;
+  display: block;
+}

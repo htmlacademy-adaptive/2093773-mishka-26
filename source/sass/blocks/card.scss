@@ -1,0 +1,36 @@
+.card__content {
+  padding: 28px;
+  border: 1px solid $color-whisper;
+}
+
+.card__title-link {
+  text-decoration: none;
+}
+
+.card__title {
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $color-default-black;
+}
+
+.card__text {
+  margin: 0 0 41px 0;
+  font-size: 13px;
+}
+
+.card__price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+  color: $color-default-black;
+}
+
+.card__button {
+  width: 20px;
+  height: 20px;
+  border: 2px solid $color-charcoal;
+  display: block;
+}

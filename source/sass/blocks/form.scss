@@ -1,0 +1,93 @@
+.form__point {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__title {
+  padding: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-downy;
+  text-transform: uppercase;
+
+  &--additionally {
+    margin-bottom: 23px;
+  }
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  &--type {
+    padding: 30px 0 31px 0;
+  }
+
+  &--color {
+    padding: 25px 0 33px 0;
+  }
+
+  &--name {
+    padding: 29px 0 35px 0;
+  }
+}
+
+.form__item {
+  margin-bottom: 24px;
+  padding-left: 61px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--name,
+  &--surname,
+  &--patronymic {
+    margin-bottom: 22px;
+    padding-left: 0;
+  }
+}
+
+.form__name {
+  font-weight: 700;
+  line-height: 18px;
+  color: $color-default-black;
+}
+
+.form__name-input,
+.form__tel,
+.form__mail {
+  padding: 17px 0;
+  width: 100%;
+  line-height: 18px;
+  border: none;
+  border-bottom: 2px solid $color-default-black;
+}
+
+.form__phone,
+.form__email {
+  margin-bottom: 35px;
+}
+
+.form__message {
+  padding: 17px;
+  width: 100%;
+  font-size: 17px;
+  line-height: 18px;
+  border: 2px solid $color-charcoal;
+}
+
+.form__note {
+  margin: 0;
+  padding-top: 17px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form__button {
+  margin-top: 30px;
+  background-color: $color-default-white;
+}
