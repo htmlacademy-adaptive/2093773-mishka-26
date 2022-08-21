@@ -5,15 +5,23 @@
   background-color: $color-white-smoke;
 }
 
-.social__list {
+.footer__social-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.copyright__text {
+.footer__social-link {
+  color: $color-aubergine;
+}
+
+.footer__copyright-text {
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
   color: $color-default-black;
+}
+
+.footer__copyright-link {
+  color: $color-downy;
 }

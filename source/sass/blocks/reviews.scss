@@ -39,6 +39,14 @@
   font-weight: 400;
   line-height: 30px;
   color: $color-charcoal;
+  text-decoration: none;
+}
+
+.reviews__switch-button {
+  width: 130px;
+  padding: 13px 38px;
+  border: 1px solid $color-whisper;
+  background-color: $color-default-white;
 }
 
 .reviews__button {

@@ -3,6 +3,10 @@
   border: 1px solid $color-whisper;
 }
 
+.card__title-link {
+  text-decoration: none;
+}
+
 .card__title {
   margin: 0 0 6px 0;
   font-weight: 700;

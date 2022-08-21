@@ -5,10 +5,15 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  border: 2px solid $color-charcoal;
   display: block;
+
+  &--primary {
+    color: $color-charcoal;
+    border: 2px solid $color-charcoal;
+  }
 
   &--secondary {
     color: $color-default-white;

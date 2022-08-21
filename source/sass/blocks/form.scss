@@ -61,7 +61,7 @@
 .form__tel,
 .form__mail {
   padding: 17px 0;
-  width: 260px;
+  width: 100%;
   line-height: 18px;
   border: none;
   border-bottom: 2px solid $color-default-black;
@@ -74,7 +74,7 @@
 
 .form__message {
   padding: 17px;
-  width: 260px;
+  width: 100%;
   font-size: 17px;
   line-height: 18px;
   border: 2px solid $color-charcoal;
