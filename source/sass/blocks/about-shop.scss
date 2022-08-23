@@ -19,3 +19,22 @@
   line-height: 20px;
   color: $color-default-black;
 }
+
+@media (min-width: $tablet-width) {
+  .about-shop {
+    padding-top: 56px;
+    padding-bottom: 83px;
+  }
+
+  .about-shop__list {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .about-shop__item {
+    max-width: 325px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+

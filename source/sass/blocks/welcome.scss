@@ -7,6 +7,7 @@
 
 .welcome__title {
   margin: 0 0 120px 0;
+  padding: 0 30px;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -30,11 +31,48 @@
 
 .welcome__link {
   padding: 24px 160px 31px 30px;
-  min-width: 130px;
+  max-width: 130px;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
   color: $color-default-white;
   text-decoration: none;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .welcome {
+    padding-top: 154px;
+  }
+
+  .welcome__title {
+    margin: 0 0 372px 0;
+    padding: 0 50px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .welcome__list {
+    margin: 0 50px;
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+  }
+
+  .welcome__link {
+    padding: 25px 167px 33px 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .welcome {
+    padding-top: 157px;
+  }
+
+  .welcome__title {
+    margin: 0 0 355px 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
