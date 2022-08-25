@@ -7,7 +7,6 @@
 
 .welcome__title {
   margin: 0 0 120px 0;
-  padding: 0 30px;
   font-weight: 700;
   font-size: 27px;
   line-height: 30px;
@@ -16,7 +15,7 @@
 }
 
 .welcome__list {
-  margin: 0;
+  margin: 0 -30px;
   padding: 0;
   list-style-type: none;
 }
@@ -47,13 +46,12 @@
 
   .welcome__title {
     margin: 0 0 372px 0;
-    padding: 0 50px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .welcome__list {
-    margin: 0 50px;
+    margin: 0;
     display: grid;
     grid-template-columns: (1fr 1fr);
   }

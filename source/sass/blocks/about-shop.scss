@@ -28,13 +28,65 @@
 
   .about-shop__list {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat (2, 300px);
+    gap: 0 35px;
+  }
+
+  .about-shop__item--eco {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .about-shop__item--price {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .about-shop__item--likes {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .about-shop__item--handmade {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .about-shop__item--local {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .about-shop__item--packaging {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 
   .about-shop__item {
-    max-width: 325px;
+    max-width: 300px;
     font-size: 20px;
     line-height: 22px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .about-shop {
+    padding: 68px 225px 90px 175px;
+  }
+
+  .about-shop__list {
+    gap: 0 50px;
+  }
+}
