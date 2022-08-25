@@ -11,14 +11,13 @@
   font-size: 14px;
   margin-bottom: 62px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .contacts__mail-wrapper {
   margin-bottom: 53px;
   display: grid;
-  grid-template-columns: 76px 183px;
-  gap: 2px;
+  grid-template-columns: 78px 183px;
 }
 
 .contacts__mail-shop {
@@ -59,7 +58,19 @@
   }
 
   .contacts__text {
+    margin-bottom: 49px;
     font-size: 17px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__mail-wrapper {
+    grid-template-columns: 78px 230px;
+    margin-right: 25px;
+  }
+
+  .contacts__address-wrapper {
+    grid-template-columns: 78px 230px;
   }
 
   .contacts__map {
@@ -83,7 +94,7 @@
   }
 
   .contacts__text {
-    max-width: 350px;
+    margin-bottom: 0;
   }
 
   .contacts__map {
