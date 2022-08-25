@@ -36,18 +36,24 @@
 }
 
 .form__item {
-  margin-bottom: 24px;
-  padding-left: 61px;
+  &--type {
+    margin-bottom: 24px;
+    padding-left: 61px;
+  }
 
-  &:last-child {
-    margin-bottom: 0;
+  &--color {
+    margin-bottom: 23px;
+    padding-left: 61px;
   }
 
   &--name,
   &--surname,
   &--patronymic {
     margin-bottom: 22px;
-    padding-left: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -90,4 +96,125 @@
 .form__button {
   margin-top: 30px;
   background-color: $color-default-white;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    margin: 0 -50px;
+  }
+
+  .form__point--darken {
+    background-color: $color-white-smoke;
+  }
+
+  .form__point-wrapper {
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 168px auto;
+    align-items: baseline;
+
+    &--type {
+      padding-top: 38px;
+      padding-bottom: 50px;
+    }
+
+    &--name {
+      padding-top: 67px;
+    }
+
+    &--tel {
+      padding-bottom: 12px;
+    }
+
+    &--email {
+      padding-top: 12px;
+    }
+
+    &--additionally {
+      padding-bottom: 53px;
+    }
+  }
+
+  .form__note-wrapper {
+    margin: 0 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form__title {
+    width: 60px;
+    margin-right: 108px;
+
+    &--additionally {
+      margin-bottom: 23px;
+    }
+  }
+
+  .form__name {
+    font-size: 19px;
+
+    &--name {
+      margin-right: 24px;
+    }
+
+    &--surname {
+      margin-right: 25px;
+    }
+
+    &--patronymic {
+      margin-right: 27px;
+    }
+  }
+
+  .form__list {
+    padding: 0;
+
+    &--color {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0 31px;
+    }
+  }
+
+  .form__item {
+    &--type {
+      margin-bottom: 58px;
+    }
+
+    &--color {
+      margin-bottom: 57px;
+      width: 208px;
+    }
+
+    &--name,
+    &--surname,
+    &--patronymic {
+      margin-bottom: 59px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__name-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__phone,
+  .form__email {
+    margin-bottom: 0;
+  }
+
+  .form__tel,
+  .form__mail {
+    background-color: inherit;
+  }
+
+  .form__button {
+    margin-top: 0;
+  }
 }
