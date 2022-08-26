@@ -16,7 +16,15 @@
   }
 
   .order__text {
+    margin: 0 auto 13px auto;
+    max-width: 702px;
     font-size: 17px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    padding-top: 118px;
   }
 }

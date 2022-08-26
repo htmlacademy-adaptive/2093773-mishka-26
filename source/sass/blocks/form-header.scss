@@ -21,3 +21,14 @@
     line-height: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-header {
+    padding-bottom: 94px;
+  }
+
+  .form-header__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

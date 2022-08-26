@@ -30,7 +30,7 @@
     padding: 25px 0 33px 0;
   }
 
-  &--name {
+  &--initials {
     padding: 29px 0 35px 0;
   }
 }
@@ -46,7 +46,7 @@
     padding-left: 61px;
   }
 
-  &--name,
+  &--initials,
   &--surname,
   &--patronymic {
     margin-bottom: 22px;
@@ -63,7 +63,7 @@
   color: $color-default-black;
 }
 
-.form__name-input,
+.form__initials-input,
 .form__tel,
 .form__mail {
   padding: 17px 0;
@@ -113,16 +113,16 @@
     grid-template-columns: 168px auto;
     align-items: baseline;
 
-    &--type {
-      padding-top: 38px;
-      padding-bottom: 50px;
+    &--color {
+      padding-bottom: 0;
     }
 
-    &--name {
+    &--initials {
       padding-top: 67px;
     }
 
     &--tel {
+      padding-top: 65px;
       padding-bottom: 12px;
     }
 
@@ -144,11 +144,10 @@
   }
 
   .form__title {
-    width: 60px;
-    margin-right: 108px;
+    max-width: 100px;
 
     &--additionally {
-      margin-bottom: 23px;
+      margin-bottom: 0;
     }
   }
 
@@ -175,6 +174,7 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 0 31px;
+      margin-bottom: -7px;
     }
   }
 
@@ -199,14 +199,24 @@
     }
   }
 
-  .form__name-wrapper {
+  .form__initials-wrapper {
     display: flex;
     align-items: center;
   }
 
+  .form__initials-input {
+    max-width: 573px;
+
+    &--name {
+      max-width: 626px;
+    }
+  }
+
   .form__phone,
-  .form__email {
+  .form__email,
+  .form__message {
     margin-bottom: 0;
+    max-width: 700px;
   }
 
   .form__tel,
@@ -216,5 +226,53 @@
 
   .form__button {
     margin-top: 0;
+  }
+
+  .form__note {
+    padding-top: 0;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__point-wrapper {
+    padding: 50px 97px;
+    grid-template-columns: 114px auto;
+
+    &--color {
+      padding-bottom: 0;
+    }
+
+    &--initials {
+      padding-top: 68px;
+    }
+
+    &--tel {
+      padding-top: 65px;
+      padding-bottom: 12px;
+    }
+
+    &--email {
+      padding-top: 12px;
+    }
+
+    &--additionally {
+      padding-bottom: 69px;
+    }
+  }
+
+  .form__note-wrapper {
+    margin: 0 90px;
+    justify-content: start;
+  }
+
+  .form__list--color {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form__button {
+    margin-left: 128px;
+    margin-right: 140px;
   }
 }
