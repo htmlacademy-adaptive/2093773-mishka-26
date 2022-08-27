@@ -20,24 +20,35 @@
         />
       </a>
       <!--Открытие меню происходит при клике на кнопку-бургер menu__toggle, с контейнера menu снимается класс "menu--closed"-->
+      <button class="menu__toggle menu__toggle--burger" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
       <div class="header__menu menu menu--closed">
-        <button class="menu__toggle menu__toggle--burger" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
         <nav class="menu__navigation">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="catalog.html">Каталог товаров</a>
+              <a class="menu__link menu__link--list" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="form.html">Вязание на заказ</a>
+              <a class="menu__link menu__link--list" href="form.html">Вязание на заказ</a>
             </li>
           </ul>
         </nav>
         <div class="menu__links">
-          <a class="menu__link" href="#">Поиск по сайту</a>
-          <a class="menu__link" href="#">Корзина: пока пуста</a>
+          <a class="menu__link menu__link--links" href="#">Поиск по сайту</a>
+          <a class="menu__link menu__link--links" href="#">Корзина: пока пуста</a>
         </div>
+      </div>
+      <div class="header__additionally">
+        <ul class="header__additionally-list">
+          <li class="header__additionally-item">
+            <a class="header__additionally-link" href="#">Новые поступления</a>
+          </li>
+          <li class="header__additionally-item">
+            <a class="header__additionally-link" href="#">Распродажа</a>
+          </li>
+        </ul>
+        <p class="header__additionally-text">Бесплатная доставка по России</p>
       </div>
     </header>
     <main class="main-index-container">
@@ -200,7 +211,9 @@
           <div class="contacts__address-wrapper">
             <h3 class="contacts__address subtitle">адрес:</h3>
             <address class="contacts__address-shop">
-              г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101
+              г. Санкт-Петербург <br />
+              ул. Большая Конюшенная <br />
+              д. 19/8, офис 101
             </address>
           </div>
         </div>
