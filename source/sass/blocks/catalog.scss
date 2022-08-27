@@ -38,7 +38,7 @@
   .catalog__list {
     display: grid;
     grid-template-columns: repeat(3, 316px);
-    gap: 0 51px;
+    gap: 51px 51px;
   }
 
   .catalog__item {
