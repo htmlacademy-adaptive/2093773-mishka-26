@@ -1,7 +1,10 @@
 .catalog-header {
-  padding-top: 74px;
-  padding-bottom: 74px;
+  padding: 74px 50px;
   background-color: $color-white-smoke;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 94px;
+  }
 }
 
 .catalog-header__title {
@@ -10,4 +13,14 @@
   font-size: 27px;
   color: $color-default-black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

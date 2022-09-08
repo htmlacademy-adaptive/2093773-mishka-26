@@ -1,13 +1,63 @@
+.menu--closed {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
 .menu__toggle {
   width: 21px;
   height: 20px;
   background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .menu__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    max-width: 490px;
+  }
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 110px;
+    order: -1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    max-width: 490px;
+    order: 0;
+  }
 }
 
 .menu__link {
@@ -18,4 +68,40 @@
   color: $color-default-black;
   text-decoration: none;
   display: block;
+
+  &--search {
+    padding-left: 32px;
+  }
+
+  &--basket {
+    padding-left: 30px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0 1px;
+    padding: 22px 0;
+    display: block;
+
+    &--list {
+      padding-right: 37px;
+    }
+
+    &--links {
+      padding-left: 31px;
+    }
+  }
+}
+
+.menu__link-img-search {
+  margin-right: 26px;
+}
+
+.menu__link-search {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.menu__link-img-basket {
+  margin-right: 25px;
 }

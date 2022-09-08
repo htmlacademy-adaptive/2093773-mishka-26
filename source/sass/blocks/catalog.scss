@@ -1,13 +1,43 @@
 .catalog {
-  padding-top: 30px;
+  padding: 30px 30px 15px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 81px 50px 15px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 130px;
+    padding-bottom: 29px;
+  }
 }
 
 .catalog__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 51px 51px;
+  }
 }
 
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
