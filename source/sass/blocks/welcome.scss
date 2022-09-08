@@ -1,8 +1,16 @@
 .welcome {
   padding-top: 72px;
   background-color: $color-default-white;
-  background-image: url("../../img/background/house-mobile.jpg");
+  background-image: url("../img/background/house-mobile.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 154px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 157px;
+  }
 }
 
 .welcome__title {
@@ -12,12 +20,30 @@
   line-height: 30px;
   color: $color-default-black;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 372px 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 355px 0;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .welcome__list {
   margin: 0 -30px;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    display: grid;
+    grid-template-columns: (1fr 1fr);
+  }
 }
 
 .welcome__item {
@@ -37,40 +63,10 @@
   color: $color-default-white;
   text-decoration: none;
   display: block;
-}
 
-@media (min-width: $tablet-width) {
-  .welcome {
-    padding-top: 154px;
-  }
-
-  .welcome__title {
-    margin: 0 0 372px 0;
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  .welcome__list {
-    margin: 0;
-    display: grid;
-    grid-template-columns: (1fr 1fr);
-  }
-
-  .welcome__link {
+  @media (min-width: $tablet-width) {
     padding: 25px 167px 33px 36px;
     font-size: 20px;
     line-height: 30px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .welcome {
-    padding-top: 157px;
-  }
-
-  .welcome__title {
-    margin: 0 0 355px 0;
-    font-size: 53px;
-    line-height: 57px;
   }
 }

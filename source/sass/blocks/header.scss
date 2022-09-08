@@ -3,56 +3,54 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
 
-.header__logo {
-  padding: 22px 0;
-  display: block;
-}
-
-.header__additionally {
-  display: none;
-}
-
-@media (min-width: $tablet-width) {
-  .header {
+  @media (min-width: $tablet-width) {
     display: block;
     position: relative;
   }
 
-  .header__additionally {
-    display: block;
+  @media (min-width: $desktop-width) {
+    position: relative;
   }
+}
 
-  .header__additionally-list {
-    display: none;
-  }
+.header__logo {
+  margin: 0 auto;
+  padding: 22px 0;
+  display: block;
 
-  .header__additionally-text {
-    margin: -45px 0 0 auto;
-    width: 234px;
-    font-size: 15px;
-    line-height: 24px;
-  }
-
-  .header__logo {
+  @media (min-width: $tablet-width) {
+    margin: 0;
     position: absolute;
     top: 0;
     left: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 500px;
+  }
 }
 
-@media (min-width: $desktop-width) {
-  .header {
-    position: relative;
+.header__additionally {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 
-  .header__additionally {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
   }
+}
 
-  .header__additionally-list {
+.header__additionally-list {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
     margin: 0;
     padding: 0;
     max-width: 750px;
@@ -60,24 +58,32 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
 
-  .header__additionally-item {
+.header__additionally-item {
+  @media (min-width: $desktop-width) {
     margin-right: 60px;
   }
+}
 
-  .header__additionally-link {
+.header__additionally-link {
+  @media (min-width: $desktop-width) {
     text-decoration: none;
     color: $color-default-black;
     font-size: 15px;
     line-height: 24px;
   }
+}
 
-  .header__additionally-text {
-    margin: 0;
+.header__additionally-text {
+  @media (min-width: $tablet-width) {
+    margin: -45px 0 0 auto;
+    width: 234px;
+    font-size: 15px;
+    line-height: 24px;
   }
 
-  .header__logo {
-    position: absolute;
-    left: 500px;
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }

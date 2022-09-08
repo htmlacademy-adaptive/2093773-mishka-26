@@ -1,7 +1,30 @@
+.card {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 334px 335px;
+    min-height: 334px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .card__content {
   padding: 28px;
   width: 260px;
   border: 1px solid $color-whisper;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 39px 26px 34px;
+    width: 335px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27px 26px 26px 28px;
+    width: 100%;
+  }
 }
 
 .card__image {
@@ -18,11 +41,30 @@
   font-size: 17px;
   line-height: 24px;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 7px;
+    font-size: 20px;
+    max-width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6px;
+  }
 }
 
 .card__text {
   margin: 0 0 41px 0;
   font-size: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 197px;
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
 }
 
 .card__buy {
@@ -36,6 +78,10 @@
   font-size: 15px;
   line-height: 24px;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .card__button {
@@ -43,51 +89,4 @@
   height: 20px;
   border: 2px solid $color-charcoal;
   display: block;
-}
-
-@media (min-width: $tablet-width) {
-  .card {
-    display: grid;
-    grid-template-columns: 334px 335px;
-    min-height: 334px;
-  }
-
-  .card__content {
-    padding: 27px 39px 26px 34px;
-    width: 335px;
-  }
-
-  .card__title {
-    margin-bottom: 7px;
-    font-size: 20px;
-  }
-
-  .card__text {
-    margin-bottom: 197px;
-    font-size: 15px;
-  }
-
-  .card__price {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card__content {
-    padding: 27px 26px 26px 28px;
-    width: 316px;
-  }
-
-  .card__title {
-    margin-bottom: 6px;
-  }
-
-  .card__text {
-    margin-bottom: 61px;
-  }
 }

@@ -12,6 +12,7 @@
     <header class="header container">
       <a class="header__logo" href="index.html">
         <img
+          class="header__image"
           src="./img/logo/mishka-logo-mobile.svg"
           width="86"
           height="35"
@@ -19,10 +20,10 @@
         />
       </a>
       <!--Открытие меню происходит при клике на кнопку-бургер menu__toggle, с контейнера menu снимается класс "menu--closed"-->
+      <button class="menu__toggle menu__toggle--burger" type="button">
+        <span class="visually-hidden">Открыть/закрыть меню</span>
+      </button>
       <div class="header__menu menu menu--closed">
-        <button class="menu__toggle menu__toggle--burger" type="button">
-          <span class="visually-hidden">Открыть/закрыть меню</span>
-        </button>
         <nav class="menu__navigation">
           <ul class="menu__list">
             <li class="menu__item">

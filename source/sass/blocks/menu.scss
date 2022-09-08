@@ -1,11 +1,25 @@
 .menu--closed {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .menu__toggle {
   width: 21px;
   height: 20px;
   background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .menu__list {
@@ -14,11 +28,36 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    max-width: 490px;
+  }
 }
 
 .menu__links {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 110px;
+    order: -1;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    max-width: 490px;
+    order: 0;
+  }
 }
 
 .menu__link {
@@ -37,41 +76,8 @@
   &--basket {
     padding-left: 30px;
   }
-}
 
-.menu__link-img-search {
-  margin-right: 26px;
-}
-
-.menu__link-img-basket {
-  margin-right: 25px;
-}
-
-@media (min-width: $tablet-width) {
-  .menu--closed {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .menu__toggle {
-    display: none;
-  }
-
-  .menu__list {
-    padding-right: 250px;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .menu__links {
-    padding-left: 110px;
-    order: -1;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-
-  .menu__link {
+  @media (min-width: $tablet-width) {
     margin: 0 1px;
     padding: 22px 0;
     display: block;
@@ -84,26 +90,18 @@
       padding-left: 31px;
     }
   }
+}
 
-  .menu__link-search {
+.menu__link-img-search {
+  margin-right: 26px;
+}
+
+.menu__link-search {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .menu--closed {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .menu__list {
-    padding-right: 0;
-    max-width: 490px;
-  }
-
-  .menu__links {
-    padding-left: 0;
-    max-width: 490px;
-    order: 0;
-  }
+.menu__link-img-basket {
+  margin-right: 25px;
 }

@@ -1,5 +1,13 @@
 .production {
   padding: 15px 30px 58px 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 50px 64px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 50px 105px 50px;
+  }
 }
 
 .production__wrapper {
@@ -8,6 +16,16 @@
   border: 1px solid $color-whisper;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: auto 367px;
+  }
 }
 
 .production__title {
@@ -17,10 +35,34 @@
   font-size: 17px;
   line-height: 24px;
   color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+    padding-left: 107px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    padding: 96px 110px 28px 79px;
+  }
 }
 
 .production__video-wrapper {
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+    margin: 0 0 41px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
 }
 
 .production__video-image {
@@ -34,73 +76,28 @@
   padding: 0 10px 0 34px;
   font-size: 13px;
   line-height: 24px;
-}
 
-.production__button {
-  margin: 41px auto 0 auto;
-  width: 192px;
-}
-
-@media (min-width: $tablet-width) {
-  .production {
-    padding: 15px 50px 64px 50px;
-  }
-
-  .production__wrapper {
-    padding-top: 0;
-    padding-bottom: 46px;
-  }
-
-  .production__title {
-    margin-bottom: 25px;
-    padding-left: 107px;
-    font-size: 20px;
-  }
-
-  .production__video-wrapper {
-    order: -1;
-    margin: 0 0 41px 0;
-  }
-
-  .production__text {
+  @media (min-width: $tablet-width) {
     padding: 0 17px 0 40px;
     font-size: 15px;
     line-height: 30px;
   }
 
-  .production__button {
-    width: 584px;
+  @media (min-width: $desktop-width) {
+    padding: 0 36px 0 79px;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .production {
-    padding: 28px 50px 105px 50px;
+.production__button {
+  margin: 41px 34px 0 34px;
+  width: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 42px;
+    margin-left: 42px;
   }
 
-  .production__wrapper {
-    display: grid;
-    grid-template-columns: 683px 367px;
-  }
-
-  .production__title {
-    margin-bottom: 0;
-    padding: 96px 110px 28px 79px;
-  }
-
-  .production__video-wrapper {
-    margin: 0;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-
-  .production__text {
-    padding: 0 36px 0 79px;
-  }
-
-  .production__button {
+  @media (min-width: $desktop-width) {
     margin: 52px auto 60px auto;
     width: 230px;
   }

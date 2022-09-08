@@ -1,6 +1,14 @@
 .form-header {
   padding: 74px 30px;
   background-color: $color-white-smoke;
+
+  @media (min-width: $tablet-width) {
+    padding: 74px 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 94px;
+  }
 }
 
 .form-header__title {
@@ -9,25 +17,13 @@
   font-size: 27px;
   color: $color-default-black;
   text-align: center;
-}
 
-@media (min-width: $tablet-width) {
-  .form-header {
-    padding: 74px 50px;
-  }
-
-  .form-header__title {
+  @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .form-header {
-    padding-bottom: 94px;
-  }
-
-  .form-header__title {
+  @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
   }
