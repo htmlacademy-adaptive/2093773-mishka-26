@@ -1,6 +1,7 @@
 .order {
   padding-top: 17px;
   padding-bottom: 55px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 68px;
