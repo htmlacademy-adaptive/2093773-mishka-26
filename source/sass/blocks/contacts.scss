@@ -43,7 +43,7 @@
 }
 
 .contacts__mail-wrapper {
-  margin-bottom: 53px;
+  margin-bottom: 35px;
   display: grid;
   grid-template-columns: 78px 183px;
 
@@ -60,6 +60,16 @@
 .contacts__mail-shop-link {
   color: $color-charcoal;
   text-decoration: none;
+  border-bottom: 1px solid $color-downy;
+
+  &:hover {
+    color: $color-puerto-rico;
+    border-color: $color-puerto-rico;
+  }
+
+  &:active {
+    border-color: rgba($color-puerto-rico, 10%);
+  }
 }
 
 .contacts__address-wrapper {

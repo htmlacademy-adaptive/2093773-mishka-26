@@ -1,5 +1,7 @@
-.menu--closed {
-  display: none;
+.menu {
+  &--closed {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -16,9 +18,16 @@
   width: 21px;
   height: 20px;
   background-color: $color-default-white;
+  cursor: pointer;
+  border: none;
 
   @media (min-width: $tablet-width) {
     display: none;
+  }
+
+  &--burger {
+    background-image: url("../img/control/menu-burger.svg");
+    background-repeat: no-repeat;
   }
 }
 

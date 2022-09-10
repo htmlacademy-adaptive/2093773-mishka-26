@@ -1,8 +1,9 @@
 .welcome {
   padding-top: 72px;
-  background-color: $color-default-white;
+  background-color: $color-snow;
   background-image: url("../img/background/house-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: 50% -18px;
 
   @media (min-width: $tablet-width) {
     padding-top: 154px;
@@ -49,14 +50,23 @@
 .welcome__item {
   background-color: $color-downy;
 
-  &--darken {
+  &--interior {
+    background-image: url("../img/icons/interior.svg");
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+  }
+
+  &--toys {
     background-color: $color-puerto-rico;
+    background-image: url("../../img/icons/toy.svg");
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
   }
 }
 
 .welcome__link {
   padding: 24px 160px 31px 30px;
-  max-width: 130px;
+  width: 100%;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -69,4 +79,9 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.welcome__link-text {
+  max-width: 130px;
+  display: block;
 }

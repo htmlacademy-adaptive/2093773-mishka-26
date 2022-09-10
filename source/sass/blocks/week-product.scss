@@ -102,12 +102,14 @@
   font-size: 15px;
   line-height: 20px;
   display: grid;
-  gap: 33px;
+  gap: 16px;
 }
 
 .week-product__item {
+  padding-bottom: 16px;
   display: grid;
   grid-template-columns: 97px 159px;
+  border-bottom: 1px solid $color-whisper;
 }
 
 .week-product__value {

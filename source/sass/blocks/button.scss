@@ -18,6 +18,16 @@
   &--primary {
     color: $color-charcoal;
     border: 2px solid $color-charcoal;
+
+    &:hover {
+      color: $color-default-white;
+      background-color: $color-charcoal;
+      border: 2px solid $color-charcoal;
+    }
+
+    &:active {
+      color: rgba(($color-default-white), 0.3);
+    }
   }
 
   &--secondary {

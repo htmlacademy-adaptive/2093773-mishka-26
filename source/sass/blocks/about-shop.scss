@@ -40,6 +40,42 @@
   line-height: 20px;
   color: $color-default-black;
 
+  &--eco {
+    background-image: url("../img/icons/about-shop-eco.svg");
+    background-repeat: no-repeat;
+    background-position-y: (28px);
+  }
+
+  &--price {
+    background-image: url("../img/icons/abot-shop-price.svg");
+    background-repeat: no-repeat;
+    background-position-y: (30px);
+  }
+
+  &--likes {
+    background-image: url("../img/icons/about-shop-likes.svg");
+    background-repeat: no-repeat;
+    background-position-y: (35px);
+  }
+
+  &--handmade {
+    background-image: url("../img/icons/about-shop-handmade.svg");
+    background-repeat: no-repeat;
+    background-position-y: (32px);
+  }
+
+  &--local {
+    background-image: url("../img/icons/about-shop-local.svg");
+    background-repeat: no-repeat;
+    background-position-y: (33px);
+  }
+
+  &--packaging {
+    background-image: url("../img/icons/about-shop-packaging.svg");
+    background-repeat: no-repeat;
+    background-position-y: (32px);
+  }
+
   @media (min-width: $tablet-width) {
     max-width: 300px;
     font-size: 20px;
