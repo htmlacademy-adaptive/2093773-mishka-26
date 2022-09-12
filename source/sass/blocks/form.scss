@@ -34,51 +34,62 @@
     display: grid;
     grid-template-columns: 168px auto;
     align-items: baseline;
-
-    &--color {
-      padding-bottom: 0;
-    }
-
-    &--initials {
-      padding-top: 67px;
-    }
-
-    &--tel {
-      padding-top: 65px;
-      padding-bottom: 12px;
-    }
-
-    &--email {
-      padding-top: 12px;
-    }
-
-    &--additionally {
-      padding-bottom: 53px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 50px 97px;
     grid-template-columns: 114px auto;
+  }
 
-    &--color {
+  &--type {
+    position: relative;
+  }
+
+  &--color {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
       padding-bottom: 0;
     }
+  }
 
-    &--initials {
-      padding-top: 68px;
+  &--initials {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 67px;
     }
 
-    &--tel {
+    @media (min-width: $desktop-width) {
+      padding-top: 68px;
+    }
+  }
+
+  &--tel {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
       padding-top: 65px;
       padding-bottom: 12px;
     }
+  }
 
-    &--email {
+  &--email {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
       padding-top: 12px;
     }
+  }
 
-    &--additionally {
+  &--additionally {
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 53px;
+    }
+
+    @media (min-width: $desktop-width) {
       padding-bottom: 69px;
     }
   }
@@ -92,14 +103,32 @@
   color: $color-downy;
   text-transform: uppercase;
 
-  &--additionally {
-    margin-bottom: 23px;
-  }
-
   @media (min-width: $tablet-width) {
     max-width: 100px;
+  }
 
-    &--additionally {
+  &--type,
+  &--color,
+  &--initials,
+  &--tel,
+  &--email,
+  &--additionally {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      right: 0;
+      left: 60px;
+      width: auto;
+      height: 1px;
+      background-color: $color-downy;
+    }
+  }
+
+  &--additionally {
+    margin-bottom: 23px;
+
+    @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }
@@ -110,33 +139,31 @@
   padding: 0;
   list-style-type: none;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   &--type {
     padding: 30px 0 31px 0;
   }
 
   &--color {
     padding: 25px 0 33px 0;
-  }
 
-  &--initials {
-    padding: 29px 0 35px 0;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-
-    &--color {
+    @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 0 31px;
       margin-bottom: -7px;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-    &--color {
+    @media (min-width: $desktop-width) {
       grid-template-columns: repeat(3, 1fr);
     }
+  }
+
+  &--initials {
+    padding: 29px 0 35px 0;
   }
 }
 
@@ -144,43 +171,96 @@
   &--type {
     margin-bottom: 24px;
     padding-left: 61px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 58px;
+    }
   }
 
   &--color {
     margin-bottom: 23px;
     padding-left: 61px;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 57px;
+      width: 208px;
+    }
   }
 
-  &--initials,
+  &--initials {
+    margin-bottom: 22px;
+  }
+
+  &--name,
   &--surname,
   &--patronymic {
     margin-bottom: 22px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 59px;
+    }
   }
 
   &:last-child {
     margin-bottom: 0;
-  }
 
-  @media (min-width: $tablet-width) {
-    &--type {
-      margin-bottom: 58px;
-    }
-
-    &--color {
-      margin-bottom: 57px;
-      width: 208px;
-    }
-
-    &--name,
-    &--surname,
-    &--patronymic {
-      margin-bottom: 59px;
-    }
-
-    &:last-child {
+    @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
   }
+}
+
+.form__control-mark {
+  position: absolute;
+  left: 0;
+  border: 2px solid $color-charcoal;
+
+  &:hover {
+    border: 2px solid $color-downy;
+  }
+
+  &:active {
+    border: 2px solid rgba($color-default-black, 30%);
+  }
+
+  &--radio {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    top: -5px;
+  }
+
+  &--checkbox {
+    width: 38px;
+    height: 38px;
+    top: -4px;
+  }
+}
+
+.form__control-input[type="radio"]:checked + .form__control-mark--radio::before {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 18px;
+  height: 18px;
+  background-color: $color-downy;
+  border-radius: 50%;
+  content: "";
+}
+
+.form__control-input[type="checkbox"]:checked + .form__control-mark--checkbox::before {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 3px;
+  width: 26px;
+  height: 21px;
+  background-image: url("../img/control/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 3px -20px;
+  background-size: 23px 65px;
 }
 
 .form__initials-wrapper {
@@ -195,8 +275,10 @@
 
   @media (min-width: $tablet-width) {
     max-width: 573px;
+  }
 
-    &--name {
+  &--name {
+    @media (min-width: $tablet-width) {
       max-width: 626px;
     }
   }
@@ -234,15 +316,43 @@
   border: none;
   border-bottom: 2px solid $color-default-black;
   background-color: inherit;
+
+  &:hover {
+    border-bottom: 2px solid $color-downy;
+  }
+
+  &:active {
+    border-bottom: 2px solid $color-downy;
+    color: $color-charcoal;
+  }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .form__phone,
 .form__email {
   margin-bottom: 35px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     max-width: 700px;
+  }
+}
+
+.form__icons {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  color: $color-default-black;
+  opacity: 20%;
+
+  &:hover,
+  &:active {
+    color: $color-downy;
+    opacity: 100%;
   }
 }
 
@@ -253,6 +363,20 @@
   font-size: 17px;
   line-height: 18px;
   border: 2px solid $color-charcoal;
+
+  &:hover {
+    border: 2px solid $color-downy;
+  }
+
+  &:active {
+    border: 2px solid $color-downy;
+    color: $color-charcoal;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 0 $color-downy;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;

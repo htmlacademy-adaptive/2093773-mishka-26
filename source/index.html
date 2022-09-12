@@ -19,11 +19,13 @@
           alt="Логотип Mishka."
         />
       </a>
-      <!--Открытие меню происходит при клике на кнопку-бургер menu__toggle, с контейнера menu снимается класс "menu--closed"-->
-      <button class="menu__toggle menu__toggle--burger" type="button">
-        <span class="visually-hidden">Открыть/закрыть меню</span>
-      </button>
+      <!--Открытие меню происходит при клике на кнопку menu__toggle, класс "menu--closed" меняется на "menu--opened" на JS
+      Закрытие меню происходит при клике на кнопку menu__toggle, класс "menu--opened" меняется на "menu--closed" на JS
+      При неработающем JS на menu навешивается класс menu--nojs с открытым меню -->
       <div class="header__menu menu menu--closed">
+        <button class="menu__toggle" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
         <nav class="menu__navigation">
           <ul class="menu__list">
             <li class="menu__item">

@@ -17,12 +17,21 @@
   display: flex;
   flex-direction: column;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba($color-default-black, 10%);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba($color-default-black, 10%);
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 0;
     padding-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
     display: grid;
     grid-template-columns: auto 367px;
   }
@@ -51,6 +60,10 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     padding: 96px 110px 28px 79px;
+
+    &--camera {
+      background-position: 80px 47px;
+    }
   }
 }
 

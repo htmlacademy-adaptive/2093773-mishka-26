@@ -1,6 +1,7 @@
 .header {
+  min-height: 79px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
@@ -16,7 +17,7 @@
 
 .header__logo {
   margin: 0 auto;
-  padding: 22px 0;
+  padding: 15px;
   display: block;
 
   @media (min-width: $tablet-width) {

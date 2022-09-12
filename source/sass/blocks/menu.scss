@@ -1,6 +1,29 @@
 .menu {
-  &--closed {
-    display: none;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    align-self: flex-end;
+
+    &--opened {
+      margin: 0;
+      position: absolute;
+      top: 79px;
+
+      &::before {
+        position: absolute;
+        content: "";
+        right: -30px;
+        width: 320px;
+        height: 324px;
+        background-color: $color-default-white;
+        z-index: 1;
+      }
+    }
+
+    &--nojs {
+      position: static;
+      align-self: center;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -15,6 +38,9 @@
 }
 
 .menu__toggle {
+  position: absolute;
+  top: -53px;
+  right: 0;
   width: 21px;
   height: 20px;
   background-color: $color-default-white;
@@ -24,11 +50,44 @@
   @media (min-width: $tablet-width) {
     display: none;
   }
+}
 
-  &--burger {
-    background-image: url("../img/control/menu-burger.svg");
-    background-repeat: no-repeat;
+.menu--closed .menu__toggle::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/control/menu-burger.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 14px;
+}
+
+.menu--opened .menu__toggle::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/control/menu-close.svg");
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 20px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .menu--closed .menu__item,
+  .menu--closed .menu__link {
+    display: none;
   }
+}
+
+.menu--nojs .menu__toggle {
+  display: none;
+}
+
+.menu--nojs .menu__item,
+.menu--nojs .menu__link {
+  display: block;
 }
 
 .menu__list {
@@ -47,6 +106,12 @@
   @media (min-width: $desktop-width) {
     padding-right: 0;
     max-width: 490px;
+  }
+}
+
+.menu__item {
+  @media (max-width: $mobile-width-only) {
+    z-index: 2;
   }
 }
 
@@ -71,19 +136,16 @@
 
 .menu__link {
   margin: 0 -30px;
-  padding: 29px 33px 27px 76px;
+  padding: 29px 56px 27px 76px;
   font-weight: 700;
   line-height: 24px;
   color: $color-default-black;
   text-decoration: none;
   display: block;
+  border-top: 1px solid $color-whisper;
 
-  &--search {
-    padding-left: 32px;
-  }
-
-  &--basket {
-    padding-left: 30px;
+  @media (max-width: $mobile-width-only) {
+    z-index: 2;
   }
 
   @media (min-width: $tablet-width) {
@@ -98,6 +160,14 @@
     &--links {
       padding-left: 31px;
     }
+  }
+
+  &--search {
+    padding-left: 32px;
+  }
+
+  &--basket {
+    padding-left: 30px;
   }
 }
 
