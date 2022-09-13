@@ -5,23 +5,75 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: $mobile-width-only) {
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $color-whisper;
+      top: 79px;
+      left: 0;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     display: block;
     position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $color-whisper;
+      top: 88px;
+      left: 0;
+      z-index: 2;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 178px;
+      background-color: $color-snow;
+      top: 89px;
+      left: 0;
+      z-index: -5;
+    }
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
   }
+
+  &--darken {
+    @media (min-width: $tablet-width) {
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 178px;
+        background-color: $color-white-smoke;
+        top: 89px;
+        left: 0;
+        right: 0;
+        z-index: -4;
+      }
+    }
+  }
 }
 
 .header__logo {
   margin: 0 auto;
-  padding: 15px;
+  padding: 22px 15px 10px 15px;
   display: block;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding: 22px 15px 20px 15px;
     position: absolute;
     top: 0;
     left: 50px;
@@ -30,6 +82,14 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     left: 500px;
+
+    &:hover {
+      opacity: 60%;
+    }
+
+    &:active {
+      opacity: 30%;
+    }
   }
 }
 
@@ -38,11 +98,17 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    position: absolute;
+    content: "";
+    right: 47px;
+    bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    position: static;
     justify-content: space-between;
+    padding: 20px 0;
   }
 }
 
@@ -63,14 +129,23 @@
 
 .header__additionally-item {
   @media (min-width: $desktop-width) {
-    margin-right: 60px;
+    margin-right: 61px;
   }
 }
 
 .header__additionally-link {
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+
   @media (min-width: $desktop-width) {
     text-decoration: none;
     color: $color-default-black;
+    font-weight: 700;
     font-size: 15px;
     line-height: 24px;
   }
@@ -78,7 +153,7 @@
 
 .header__additionally-text {
   @media (min-width: $tablet-width) {
-    margin: -45px 0 0 auto;
+    margin: 0 0 0 auto;
     width: 234px;
     font-size: 15px;
     line-height: 24px;

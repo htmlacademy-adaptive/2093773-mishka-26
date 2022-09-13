@@ -14,7 +14,7 @@
         content: "";
         right: -30px;
         width: 320px;
-        height: 324px;
+        height: 316px;
         background-color: $color-default-white;
         z-index: 1;
       }
@@ -39,7 +39,7 @@
 
 .menu__toggle {
   position: absolute;
-  top: -53px;
+  top: -47px;
   right: 0;
   width: 21px;
   height: 20px;
@@ -113,6 +113,18 @@
   @media (max-width: $mobile-width-only) {
     z-index: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    border-right: 1px solid $color-whisper;
+
+    &:first-child {
+      margin-left: -35px;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
 }
 
 .menu__links {
@@ -135,30 +147,63 @@
 }
 
 .menu__link {
-  margin: 0 -30px;
-  padding: 29px 56px 27px 76px;
+  margin: 0 -27px;
+  padding: 28px 56px 26px 76px;
   font-weight: 700;
   line-height: 24px;
   color: $color-default-black;
   text-decoration: none;
   display: block;
-  border-top: 1px solid $color-whisper;
+
+  &:hover {
+    color: rgba($color-default-black, 60%);
+
+    .menu__link-img-search,
+    .menu__link-img-basket {
+      fill: $color-downy;
+      opacity: 100%;
+    }
+  }
+
+  &:active {
+    opacity: 30%;
+
+    .menu__link-img-search,
+    .menu__link-img-basket {
+      fill: $color-downy;
+      opacity: 30%;
+    }
+  }
 
   @media (max-width: $mobile-width-only) {
+    border-top: 1px solid $color-whisper;
     z-index: 2;
   }
 
   @media (min-width: $tablet-width) {
     margin: 0 1px;
-    padding: 22px 0;
+    padding: 32px 0;
     display: block;
+    z-index: 1;
+  }
 
-    &--list {
-      padding-right: 37px;
+  &--list {
+    @media (min-width: $tablet-width) {
+      padding: 20px 35px 20px 0;
+      font-size: 15px;
     }
 
-    &--links {
+    @media (min-width: $desktop-width) {
+      padding: 32px 35px;
+    }
+  }
+
+  &--links {
+    @media (min-width: $tablet-width) {
+      padding-top: 33px;
       padding-left: 31px;
+      border-left: 1px solid $color-whisper;
+      background-color: $color-default-white;
     }
   }
 
@@ -172,7 +217,8 @@
 }
 
 .menu__link-img-search {
-  margin-right: 26px;
+  margin-right: 31px;
+  opacity: 30%;
 }
 
 .menu__link-search {
@@ -183,4 +229,5 @@
 
 .menu__link-img-basket {
   margin-right: 25px;
+  opacity: 30%;
 }

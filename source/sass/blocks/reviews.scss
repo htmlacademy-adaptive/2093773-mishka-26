@@ -103,6 +103,10 @@
     opacity: 30%;
   }
 
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
   &--prew {
     background-image: url("../img/control/huge-arrow-left.svg");
     background-repeat: no-repeat;

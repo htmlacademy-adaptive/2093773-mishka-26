@@ -1,15 +1,32 @@
 .contacts {
   padding-top: 38px;
   padding-bottom: 39px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-top: 68px;
     padding-bottom: 57px;
+
+    &::before {
+      background-image: url("../img/icons/contacts-flag.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      content: "";
+      top: 46px;
+      right: 53px;
+      width: 47px;
+      height: 81px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 150px 577px 121px 175px;
     position: relative;
+  }
+
+  &::before {
+    top: 133px;
+    left: 91px;
   }
 }
 
