@@ -4,13 +4,39 @@
   background-image: url("../img/background/house-mobile.jpg");
   background-repeat: no-repeat;
   background-position: 50% -18px;
+  position: relative;
+  overflow-y: hidden;
 
   @media (min-width: $tablet-width) {
-    padding-top: 154px;
+    padding-top: 90px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/pattern/pattern-tablet.svg");
+      background-repeat: repeat-x;
+      bottom: -14px;
+      left: 0;
+      width: 100%;
+      height: 24px;
+      z-index: 5;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 88px;
+    padding-top: 94px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/pattern/pattern-desktop.svg");
+      background-repeat: repeat-x;
+      bottom: -10px;
+      left: -40px;
+      width: 100%;
+      height: 24px;
+      z-index: 5;
+    }
   }
 }
 
@@ -51,16 +77,43 @@
   background-color: $color-downy;
 
   &--interior {
-    background-image: url("../img/icons/interior.svg");
-    background-repeat: no-repeat;
-    background-position: 85% 50%;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icons/interior.svg");
+      background-repeat: no-repeat;
+      top: 23px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
+    }
   }
 
   &--toys {
+    position: relative;
     background-color: $color-puerto-rico;
-    background-image: url("../../img/icons/toy.svg");
-    background-repeat: no-repeat;
-    background-position: 85% 50%;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/icons/toy.svg");
+      background-repeat: no-repeat;
+      top: 21px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+
+      @media (min-width: $tablet-width) {
+        top: 31px;
+        right: 33px;
+      }
+    }
   }
 }
 

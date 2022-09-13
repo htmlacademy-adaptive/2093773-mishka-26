@@ -20,13 +20,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 150px 577px 121px 175px;
+    padding: 148px 577px 105px 224px;
     position: relative;
-  }
 
-  &::before {
-    top: 133px;
-    left: 91px;
+    &::before {
+      top: 131px;
+      left: 113px;
+    }
   }
 }
 
@@ -60,13 +60,17 @@
 }
 
 .contacts__mail-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   display: grid;
   grid-template-columns: 78px 183px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 78px 230px;
     margin-right: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
   }
 }
 
@@ -78,6 +82,14 @@
   color: $color-charcoal;
   text-decoration: none;
   border-bottom: 1px solid $color-downy;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 
   &:hover {
     color: $color-puerto-rico;
@@ -96,6 +108,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 78px 230px;
+    gap: 0;
   }
 }
 
@@ -122,12 +135,14 @@
 
 .contacts__button {
   margin: 42px auto 0 auto;
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 55px;
+    margin-top: 58px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 85px auto 0 0;
+    margin: 84px auto 0 0;
   }
 }

@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  overflow-y: hidden;
 
   @media (max-width: $mobile-width-only) {
     &::before {
