@@ -1,18 +1,18 @@
 .production {
-  padding: 15px 30px 58px 30px;
+  padding: 15px 30px 57px 30px;
 
   @media (min-width: $tablet-width) {
-    padding: 15px 50px 64px 50px;
+    padding: 37px 50px 64px 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 28px 50px 105px 50px;
+    padding: 28px 50px 102px 50px;
   }
 }
 
 .production__wrapper {
-  padding-top: 22px;
-  padding-bottom: 33px;
+  padding-top: 21px;
+  padding-bottom: 32px;
   border: 1px solid $color-whisper;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
-    padding-bottom: 46px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,6 +49,10 @@
     background-image: url("../img/icons/production-video.svg");
     background-repeat: no-repeat;
     background-position: 34px 50%;
+
+    @media (min-width: $tablet-width) {
+      background-position: 40px 50%;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -59,7 +63,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding: 96px 110px 28px 79px;
+    padding: 96px 110px 23px 79px;
 
     &--camera {
       background-position: 80px 47px;
@@ -68,12 +72,14 @@
 }
 
 .production__video-wrapper {
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   position: relative;
 
   @media (min-width: $tablet-width) {
     order: -1;
     margin: 0 0 41px 0;
+    width: 668px;
+    height: 455px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +104,7 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 17px 0 40px;
+    padding: 0 40px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -111,14 +117,16 @@
 .production__button {
   margin: 41px 34px 0 34px;
   width: auto;
+  font-size: 18px;
 
   @media (min-width: $tablet-width) {
     margin-right: 42px;
     margin-left: 42px;
+    font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 52px auto 60px auto;
+    margin: 52px 56px 60px auto;
     width: 230px;
   }
 }
@@ -146,5 +154,9 @@
     height: 62px;
     background-size: 81px 62px;
     opacity: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 15px;
   }
 }

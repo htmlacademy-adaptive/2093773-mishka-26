@@ -12,7 +12,8 @@
 }
 
 .card__content {
-  padding: 28px;
+  padding: 27px;
+  padding-bottom: 20px;
   width: 260px;
   border: 1px solid $color-whisper;
   position: relative;
@@ -23,7 +24,7 @@
     content: "";
     position: absolute;
     right: 28px;
-    bottom: 80px;
+    bottom: 73px;
     left: 28px;
     width: auto;
     height: 1px;
@@ -39,7 +40,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 27px 39px 26px 34px;
+    padding: 27px 39px 24px 34px;
     width: 335px;
 
     &::after {
@@ -63,13 +64,8 @@
 .card__content-wrapper {
   margin-bottom: 41px;
 
-  @media (min-width: $tablet-width) {
-    margin-bottom: 197px;
-  }
-
   @media (min-width: $desktop-width) {
-    margin-bottom: 37px;
-    min-height: 121px;
+    margin-bottom: 36px;
   }
 }
 
@@ -94,7 +90,7 @@
 }
 
 .card__title {
-  margin: 0 0 6px 0;
+  margin: 0 0 5px 0;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -146,6 +142,10 @@
   }
 }
 
+.card__button {
+  position: relative;
+}
+
 .card__button-image {
   color: $color-default-black;
   opacity: 20%;
@@ -158,5 +158,16 @@
   &:active {
     color: $color-downy;
     opacity: 30%;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 5px;
   }
 }
