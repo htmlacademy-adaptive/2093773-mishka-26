@@ -194,7 +194,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding: 32px 35px;
+      padding: 32px 34px;
+      font-size: 17px;
     }
   }
 
@@ -204,6 +205,11 @@
       padding-left: 31px;
       border-left: 1px solid $color-whisper;
       background-color: $color-default-white;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 35px;
+      padding-bottom: 0;
     }
   }
 

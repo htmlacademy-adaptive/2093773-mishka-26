@@ -57,6 +57,10 @@
       padding-top: 31px;
       padding-bottom: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      padding-bottom: 17px;
+    }
   }
 
   &--initials {
@@ -68,7 +72,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-top: 68px;
+      padding-top: 22px;
     }
   }
 
@@ -78,6 +82,10 @@
     @media (min-width: $tablet-width) {
       padding-top: 42px;
       padding-bottom: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-top: 45px;
     }
   }
 
@@ -97,7 +105,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      padding-bottom: 69px;
+      padding-bottom: 40px;
     }
   }
 }
@@ -119,6 +127,10 @@
 
   @media (min-width: $tablet-width) {
     max-width: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
   }
 
   &--type,
@@ -163,6 +175,10 @@
 
   &--type {
     padding: 36px 0 43px 0;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 15px;
+    }
   }
 
   &--color {
@@ -177,12 +193,20 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: repeat(3, 1fr);
+      padding-top: 28px;
+      padding-bottom: 0;
+      padding-left: 15px;
+      grid-template-columns: repeat(3, 230px);
+      gap: 0 32px;
     }
   }
 
   &--initials {
     padding: 24px 0 35px 0;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 15px;
+    }
   }
 }
 
@@ -219,6 +243,10 @@
   &--surname,
   &--patronymic {
     margin-bottom: 18px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 22px;
+    }
   }
 
   &:last-child {
@@ -265,6 +293,10 @@
       width: 52px;
       height: 52px;
       top: -8px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -12px;
     }
   }
 }
@@ -381,6 +413,10 @@
     padding: 15px 17px;
     font-size: 19px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 13px 17px;
+  }
 }
 
 .form__tel {
@@ -388,6 +424,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 16px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
   }
 }
 
@@ -416,6 +456,11 @@
     margin-bottom: 0;
     max-width: 700px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 15px;
+    max-width: 715px;
+  }
 }
 
 .form__icons {
@@ -430,12 +475,20 @@
     right: 26px;
   }
 
+  @media (min-width: $desktop-width) {
+    right: 10px;
+  }
+
   &--letter {
     top: 20px;
     right: 4px;
 
     @media (min-width: $tablet-width) {
       right: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 6px;
     }
   }
 }
@@ -466,6 +519,10 @@
     margin-bottom: 0;
     font-size: 19px;
     max-width: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
   }
 }
 
@@ -506,7 +563,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 128px;
-    margin-right: 140px;
+    margin-left: 135px;
+    margin-right: 168px;
   }
 }
