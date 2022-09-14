@@ -1,4 +1,5 @@
 .reviews {
+  margin: 0 auto;
   padding-top: 31px;
   padding-bottom: 51px;
   position: relative;
@@ -14,7 +15,8 @@
 
   @media (min-width: $desktop-width) {
     left: 50px;
-    padding: 78px 119px 157px 174px;
+    max-width: 1150px;
+    padding: 78px 119px 157px 124px;
     position: relative;
   }
 
@@ -45,9 +47,10 @@
       background-image: url("../img/pattern/pattern-wave-l.png");
       background-repeat: repeat-x;
       bottom: 0;
-      left: -28px;
-      width: 110%;
+      left: 50%;
+      width: 1000%;
       height: 25px;
+      transform: translateX(-50%);
     }
   }
 

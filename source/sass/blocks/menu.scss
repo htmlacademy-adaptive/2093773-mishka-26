@@ -226,6 +226,10 @@
 
 .menu__link-img-search {
   opacity: 30%;
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: 25px;
+  }
 }
 
 .menu__link-search {

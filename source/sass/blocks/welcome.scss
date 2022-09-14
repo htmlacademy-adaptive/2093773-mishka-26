@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: 50% -18px;
   position: relative;
-  overflow-y: hidden;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 90px;
@@ -17,7 +17,7 @@
       background-repeat: repeat-x;
       bottom: -14px;
       left: 0;
-      width: 100%;
+      width: 110%;
       height: 24px;
       z-index: 5;
     }
@@ -32,8 +32,8 @@
       background-image: url("../img/pattern/pattern-desktop.svg");
       background-repeat: repeat-x;
       bottom: -10px;
-      left: -40px;
-      width: 100%;
+      left: -4px;
+      width: 110%;
       height: 24px;
       z-index: 5;
     }

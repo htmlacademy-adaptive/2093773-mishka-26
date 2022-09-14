@@ -125,11 +125,15 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: 527px;
+    width: 435px;
     height: 457px;
     position: absolute;
     top: 71px;
     right: 50px;
+  }
+
+  @media (min-width: $desktop-width-max) {
+    width: 527px;
   }
 }
 

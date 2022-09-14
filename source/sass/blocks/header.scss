@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  overflow-y: hidden;
+  overflow: hidden;
 
   @media (max-width: $mobile-width-only) {
     &::before {
@@ -58,6 +58,7 @@
         position: absolute;
         content: "";
         width: 100%;
+        max-width: none;
         height: 500px;
         background-color: $color-white-smoke;
         top: 89px;
