@@ -1,15 +1,42 @@
 .welcome {
   padding-top: 72px;
-  background-color: $color-default-white;
+  background-color: $color-snow;
   background-image: url("../img/background/house-mobile.jpg");
   background-repeat: no-repeat;
+  background-position: 50% -18px;
+  position: relative;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    padding-top: 154px;
+    padding-top: 90px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/pattern/pattern-tablet.svg");
+      background-repeat: repeat-x;
+      bottom: -14px;
+      left: 0;
+      width: 110%;
+      height: 24px;
+      z-index: 5;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 157px;
+    padding-top: 94px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/pattern/pattern-desktop.svg");
+      background-repeat: repeat-x;
+      bottom: -10px;
+      left: -4px;
+      width: 110%;
+      height: 24px;
+      z-index: 5;
+    }
   }
 }
 
@@ -47,16 +74,20 @@
 }
 
 .welcome__item {
-  background-color: $color-downy;
+  &--interior {
+    position: relative;
+    background-color: $color-downy;
+  }
 
-  &--darken {
+  &--toys {
+    position: relative;
     background-color: $color-puerto-rico;
   }
 }
 
 .welcome__link {
   padding: 24px 160px 31px 30px;
-  max-width: 130px;
+  width: 100%;
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
@@ -64,9 +95,54 @@
   text-decoration: none;
   display: block;
 
+  &:hover {
+    transform: translateY(-5px);
+    background-color: inherit;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 25px 167px 33px 36px;
     font-size: 20px;
     line-height: 30px;
   }
+
+  &--interior {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../img/icons/interior.svg");
+      background-repeat: no-repeat;
+      top: 23px;
+      right: 36px;
+      width: 40px;
+      height: 62px;
+
+      @media (min-width: $tablet-width) {
+        top: 30px;
+      }
+    }
+  }
+
+  &--toys {
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../../img/icons/toy.svg");
+      background-repeat: no-repeat;
+      top: 21px;
+      right: 27px;
+      width: 60px;
+      height: 60px;
+
+      @media (min-width: $tablet-width) {
+        top: 31px;
+        right: 33px;
+      }
+    }
+  }
+}
+
+.welcome__link-text {
+  max-width: 130px;
+  display: block;
 }

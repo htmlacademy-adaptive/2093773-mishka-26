@@ -27,7 +27,7 @@
 }
 
 .catalog__item {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 54px;
@@ -35,6 +35,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
+    height: 100%;
   }
 
   &:last-child {

@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 68px 225px 90px 175px;
+    padding: 68px 225px 90px 225px;
   }
 }
 
@@ -23,6 +23,7 @@
   list-style-type: none;
 
   @media (min-width: $tablet-width) {
+    margin-top: -13px;
     max-width: none;
     display: grid;
     grid-template-columns: 300px 300px;
@@ -40,7 +41,44 @@
   line-height: 20px;
   color: $color-default-black;
 
+  &--eco {
+    background-image: url("../img/icons/about-shop-eco.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 28px;
+  }
+
+  &--price {
+    background-image: url("../img/icons/abot-shop-price.svg");
+    background-repeat: no-repeat;
+    background-position: 0 29px;
+  }
+
+  &--likes {
+    background-image: url("../img/icons/about-shop-likes.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 33px;
+  }
+
+  &--handmade {
+    background-image: url("../img/icons/about-shop-handmade.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 30px;
+  }
+
+  &--local {
+    background-image: url("../img/icons/about-shop-local.svg");
+    background-repeat: no-repeat;
+    background-position: 0 31px;
+  }
+
+  &--packaging {
+    background-image: url("../img/icons/about-shop-packaging.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 29px;
+  }
+
   @media (min-width: $tablet-width) {
+    padding-top: 110px;
     max-width: 300px;
     font-size: 20px;
     line-height: 22px;
@@ -50,6 +88,7 @@
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 2;
+      background-position-y: 53px;
     }
 
     &--price {
@@ -57,6 +96,7 @@
       grid-column-end: 2;
       grid-row-start: 2;
       grid-row-end: 3;
+      background-position-y: 56px;
     }
 
     &--likes {
@@ -64,6 +104,7 @@
       grid-column-end: 2;
       grid-row-start: 3;
       grid-row-end: 4;
+      background-position-y: 62px;
     }
 
     &--handmade {
@@ -71,6 +112,7 @@
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 2;
+      background-position-y: 57px;
     }
 
     &--local {
@@ -78,6 +120,7 @@
       grid-column-end: 3;
       grid-row-start: 2;
       grid-row-end: 3;
+      background-position-y: 59px;
     }
 
     &--packaging {
@@ -85,6 +128,7 @@
       grid-column-end: 3;
       grid-row-start: 3;
       grid-row-end: 4;
+      background-position-y: 58px;
     }
   }
 }
