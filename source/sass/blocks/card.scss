@@ -1,4 +1,6 @@
 .card {
+  height: 100%;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 334px 335px;
@@ -19,6 +21,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 
   &::after {
     content: "";

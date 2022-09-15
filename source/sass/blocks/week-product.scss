@@ -2,6 +2,7 @@
   padding-top: 31px;
   padding-bottom: 42px;
   position: relative;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-top: 54px;
@@ -9,6 +10,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1050px;
     padding-top: 74px;
     padding-bottom: 96px;
     position: relative;
@@ -40,10 +42,12 @@
       content: "";
       background-image: url("../img/pattern/pattern-wave-l.png");
       background-repeat: repeat-x;
+      max-width: 1050px;
+      width: 100%;
       bottom: 0;
-      left: -28px;
-      width: 110%;
+      left: 0;
       height: 25px;
+      transform: rotate(180deg);
     }
   }
 }
@@ -61,7 +65,8 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     position: absolute;
-    top: 135px;
+    top: 134px;
+    left: 0;
   }
 }
 
@@ -108,7 +113,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 112px;
-    padding: 153px 58px 0 175px;
+    padding: 153px 58px 0 125px;
   }
 }
 
@@ -174,7 +179,7 @@
 
 .week-product__buy-wrapper {
   @media (min-width: $desktop-width) {
-    padding-left: 175px;
+    padding-left: 125px;
   }
 }
 

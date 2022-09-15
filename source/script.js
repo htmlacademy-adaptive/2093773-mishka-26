@@ -1,7 +1,7 @@
 let menu = document.querySelector('.menu');
 let toggle = document.querySelector('.menu__toggle');
 
-menu.classList.remove('menu--nojs');
+menu.classList.remove('menu--no-js');
 
 toggle.addEventListener('click', function () {
   if (menu.classList.contains('menu--closed')) {
