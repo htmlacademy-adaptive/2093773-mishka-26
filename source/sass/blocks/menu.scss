@@ -6,13 +6,14 @@
 
     &--opened {
       margin: 0;
+      width: 100vw;
       position: absolute;
       top: 79px;
     }
 
-    &--nojs {
+    &--no-js {
       position: static;
-      align-self: center;
+      width: 100vw;
     }
   }
 
@@ -143,7 +144,6 @@
 }
 
 .menu__link {
-  margin: 0 -27px;
   padding: 28px 56px 26px 76px;
   font-weight: 700;
   line-height: 24px;

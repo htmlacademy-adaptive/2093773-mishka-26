@@ -24,7 +24,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -13px;
-    max-width: none;
+    max-width: 675px;
     display: grid;
     grid-template-columns: 300px 300px;
     gap: 0 35px;
@@ -32,6 +32,7 @@
 
   @media (min-width: $desktop-width) {
     gap: 0 50px;
+    max-width: none;
   }
 }
 
