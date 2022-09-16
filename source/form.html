@@ -12,13 +12,27 @@
     <header class="header header--darken">
       <div class="header__wrapper">
         <a class="header__logo" href="index.html">
-          <img
-            class="header__image"
-            src="./img/logo/mishka-logo-mobile.svg"
-            width="86"
-            height="35"
-            alt="Логотип Mishka."
-          />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./img/logo/mishka-logo-desktop.svg"
+              width="149"
+              height="72"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/logo/mishka-logo-tablet.svg"
+              width="113"
+              height="46"
+            />
+            <img
+              class="header__image"
+              src="./img/logo/mishka-logo-mobile.svg"
+              width="86"
+              height="35"
+              alt="Логотип Mishka."
+            />
+          </picture>
         </a>
         <div class="header__menu menu menu--closed menu--no-js">
           <button class="menu__toggle" type="button">

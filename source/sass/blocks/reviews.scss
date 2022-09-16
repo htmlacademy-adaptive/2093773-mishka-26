@@ -6,11 +6,17 @@
 
   @media (min-width: $tablet-width) {
     background-color: $color-default-white;
-    background-image: url("../img/background/reviews.jpg");
+    background-image: url("../img/background/reviews-tablet.jpg");
     background-repeat: no-repeat;
     padding-top: 83px;
     padding-bottom: 103px;
     position: relative;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/reviews-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 350px 457px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -22,7 +28,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-image: url("../../img/pattern/pattern-wave-s.png");
+    background-image: url("../img/pattern/pattern-wave-s.png");
     background-repeat: repeat-x;
     bottom: 0;
     left: -8px;

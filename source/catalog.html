@@ -12,13 +12,27 @@
     <header class="header header--darken">
       <div class="header__wrapper">
         <a class="header__logo" href="index.html">
-          <img
-            class="header__image"
-            src="./img/logo/mishka-logo-mobile.svg"
-            width="86"
-            height="35"
-            alt="Логотип Mishka."
-          />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./img/logo/mishka-logo-desktop.svg"
+              width="149"
+              height="72"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/logo/mishka-logo-tablet.svg"
+              width="113"
+              height="46"
+            />
+            <img
+              class="header__image"
+              src="./img/logo/mishka-logo-mobile.svg"
+              width="86"
+              height="35"
+              alt="Логотип Mishka."
+            />
+          </picture>
         </a>
         <div class="header__menu menu menu--closed menu--no-js">
           <button class="menu__toggle" type="button">
@@ -105,13 +119,34 @@
             <div class="catalog__card card">
               <div class="card__image-wrapper">
                 <a class="card__image-link" href="#">
-                  <img
-                    class="card__image"
-                    src="./img/product/product-bunny-mobile.jpg"
-                    width="260"
-                    height="195"
-                    alt="Изображение вязаного зайчика."
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/product/product-bunny-desktop.jpg    1x,
+                        ./img/product/product-bunny-desktop@2x.jpg 2x
+                      "
+                      width="316"
+                      height="462"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/product/product-bunny-tablet.jpg    1x,
+                        ./img/product/product-bunny-tablet@2x.jpg 2x
+                      "
+                      width="334"
+                      height="334"
+                    />
+                    <img
+                      class="card__image"
+                      src="./img/product/product-bunny-mobile.jpg 1x"
+                      srcset="./img/product/product-bunny-mobile@2x.jpg 2x"
+                      width="260"
+                      height="195"
+                      alt="Изображение вязаного зайчика."
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="card__content">
@@ -150,13 +185,34 @@
             <div class="catalog__card card">
               <div class="card__image-wrapper">
                 <a class="card__image-link" href="#">
-                  <img
-                    class="card__image"
-                    src="./img/product/product-basket-mobile.jpg"
-                    width="260"
-                    height="195"
-                    alt="Изображение вязаной корзинки."
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/product/product-basket-desktop.jpg    1x,
+                        ./img/product/product-basket-desktop@2x.jpg 2x
+                      "
+                      width="316"
+                      height="462"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/product/product-basket-tablet.jpg    1x,
+                        ./img/product/product-basket-tablet@2x.jpg 2x
+                      "
+                      width="334"
+                      height="334"
+                    />
+                    <img
+                      class="card__image"
+                      src="./img/product/product-basket-mobile.jpg 1x"
+                      srcset="./img/product/product-basket-mobile@2x.jpg 2x"
+                      width="260"
+                      height="195"
+                      alt="Изображение вязаной корзинки."
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="card__content">
@@ -195,13 +251,34 @@
             <div class="catalog__card card">
               <div class="card__image-wrapper">
                 <a class="card__image-link" href="#">
-                  <img
-                    class="card__image"
-                    src="./img/product/product-big-basket-mobile.jpg"
-                    width="260"
-                    height="195"
-                    alt="Изображение большой корзинки для игрушек."
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/product/product-big-basket-desktop.jpg    1x,
+                        ./img/product/product-big-basket-desktop@2x.jpg 2x
+                      "
+                      width="316"
+                      height="462"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/product/product-big-basket-tablet.jpg    1x,
+                        ./img/product/product-big-basket-tablet@2x.jpg 2x
+                      "
+                      width="334"
+                      height="334"
+                    />
+                    <img
+                      class="card__image"
+                      src="./img/product/product-big-basket-mobile.jpg 1x"
+                      srcset="./img/product/product-big-basket-mobile@2x.jpg 2x"
+                      width="260"
+                      height="195"
+                      alt="Изображение большой корзинки для игрушек."
+                    />
+                  </picture>
                 </a>
               </div>
               <div class="card__content">
@@ -246,13 +323,34 @@
             Процесс производства
           </h2>
           <div class="production__video-wrapper">
-            <img
-              class="production__video-image"
-              src="./img/video/video-mobile.jpg"
-              width="260"
-              height="150"
-              alt="Обложка видео о производстве изделий."
+            <picture>
+              <source
+              media="(min-width: 1024px)"
+              srcset="
+                ./img/video/video-desktop.jpg 1x,
+                ./img/video/video-desktop@2x.jpg 2x
+              "
+              width="683"
+              height="455"
             />
+              <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/video/video-tablet.jpg 1x,
+                ./img/video/video-tablet@2x.jpg 2x
+              "
+              width="668"
+              height="455"
+            />
+              <img
+                class="production__video-image"
+                src="./img/video/video-mobile.jpg 1x"
+                srcset="./img/video/video-mobile@2x.jpg 2x"
+                width="260"
+                height="150"
+                alt="Обложка видео о производстве изделий."
+              />
+            </picture>
             <a class="production__button-video" href="#">
               <span class="visually-hidden">Воспроизвести видео.</span>
             </a>

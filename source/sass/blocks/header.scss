@@ -83,15 +83,17 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding: 22px 15px 20px 15px;
+    padding: 22px 15px 10px 15px;
     position: absolute;
     top: 0;
-    left: 50px;
+    left: 35px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 0;
+    padding: 9px 9px;
+    width: 150px;
+    left: 42.7%;
     right: 0;
     text-align: center;
 

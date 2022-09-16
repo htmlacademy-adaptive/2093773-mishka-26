@@ -12,13 +12,27 @@
     <header class="header">
       <div class="header__wrapper">
         <a class="header__logo" href="index.html">
-          <img
-            class="header__image"
-            src="./img/logo/mishka-logo-mobile.svg"
-            width="86"
-            height="35"
-            alt="Логотип Mishka."
-          />
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="./img/logo/mishka-logo-desktop.svg"
+              width="149"
+              height="72"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./img/logo/mishka-logo-tablet.svg"
+              width="113"
+              height="46"
+            />
+            <img
+              class="header__image"
+              src="./img/logo/mishka-logo-mobile.svg"
+              width="86"
+              height="35"
+              alt="Логотип Mishka."
+            />
+          </picture>
         </a>
         <div class="header__menu menu menu--closed menu--no-js">
           <button class="menu__toggle" type="button">
@@ -141,13 +155,36 @@
               </div>
             </dl>
           </div>
-          <img
-            class="week-product__image"
-            src="./img/product/product-triple-set-mobile.jpg"
-            width="260"
-            height="315"
-            alt="Три вязаные корзинки: большая, средняя, маленькая."
-          />
+          <div class="week-product__image-wrapper">
+            <picture>
+              <source
+              media="(min-width: 1024px)"
+              srcset="
+                ./img/product/product-triple-set-desktop.jpg 1x,
+                ./img/product/product-triple-set-desktop@2x.jpg 2x
+              "
+              width="525"
+              height="636"
+            />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/product/product-triple-set-tablet.jpg 1x,
+                  ./img/product/product-triple-set-tablet@2x.jpg 2x
+                "
+                width="334"
+                height="404"
+              />
+              <img
+                class="week-product__image"
+                src="./img/product/product-triple-set-mobile.jpg 1x"
+                srcset="./img/product/product-triple-set-mobile@2x.jpg 2x"
+                width="260"
+                height="315"
+                alt="Три вязаные корзинки: большая, средняя, маленькая."
+              />
+            </picture>
+          </div>
           <div class="week-product__buy-wrapper">
             <p class="week-product__price">Цена: 990 руб.</p>
             <a class="week-product__button button button--primary" href="#">
