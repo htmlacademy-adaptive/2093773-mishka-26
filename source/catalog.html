@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mishka | Каталог товаров</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png">
-    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="./img/favicons/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/favicons/favicon-apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
     <header class="header header--darken">
@@ -329,23 +329,23 @@
           <div class="production__video-wrapper">
             <picture>
               <source
-              media="(min-width: 1024px)"
-              srcset="
-                ./img/video/video-desktop.jpg,
-                ./img/video/video-desktop@2x.jpg 2x
-              "
-              width="683"
-              height="455"
-            />
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/video/video-desktop.jpg,
+                  ./img/video/video-desktop@2x.jpg 2x
+                "
+                width="683"
+                height="455"
+              />
               <source
-              media="(min-width: 768px)"
-              srcset="
-                ./img/video/video-tablet.jpg,
-                ./img/video/video-tablet@2x.jpg 2x
-              "
-              width="668"
-              height="455"
-            />
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/video/video-tablet.jpg,
+                  ./img/video/video-tablet@2x.jpg 2x
+                "
+                width="668"
+                height="455"
+              />
               <img
                 class="production__video-image"
                 src="./img/video/video-mobile.jpg"
@@ -500,9 +500,12 @@
       </div>
     </footer>
     <!-- Открытие модального окна происходит при клике на кнопку корзины "catalog-item__button", с блока "modal-container" снимается класс "modal-container--close" на JS -->
-    <div class="modal-container modal-container--close container">
+    <div class="modal-container modal-container--close">
       <div class="modal-container__modal modal">
-        <h2 class="modal__title title">Добавить в корзину</h2>
+        <h2 class="modal__title">
+          Добавить <br />
+          в корзину
+        </h2>
         <form
           class="modal__form"
           action="https://echo.htmlacademy.ru/"
@@ -514,34 +517,37 @@
               <li class="modal__item modal__item--size-s">
                 <label class="modal__control">
                   <input
-                    class="modal__input"
+                    class="visually-hidden modal__input"
                     type="radio"
                     name="size"
                     value="size-s"
                     checked
                   />
+                  <span class="modal__control-mark"></span>
                   <span class="modal__control-label">S</span>
                 </label>
               </li>
               <li class="modal__item modal__item--size-m">
                 <label class="modal__control">
                   <input
-                    class="modal__input"
+                    class="visually-hidden modal__input"
                     type="radio"
                     name="size"
                     value="size-m"
                   />
+                  <span class="modal__control-mark"></span>
                   <span class="modal__control-label">M</span>
                 </label>
               </li>
               <li class="modal__item modal__item--size-l">
                 <label class="modal__control">
                   <input
-                    class="modal__input"
+                    class="visually-hidden modal__input"
                     type="radio"
                     name="size"
                     value="size-l"
                   />
+                  <span class="modal__control-mark"></span>
                   <span class="modal__control-label">L</span>
                 </label>
               </li>

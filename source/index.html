@@ -482,9 +482,12 @@
       </div>
     </footer>
     <!-- Открытие модального окна происходит при клике на кнопку заказа товара недели "week-product__button", с блока "modal-container" снимается класс "modal-container--close" на JS -->
-    <div class="modal-container modal-container--close container">
+    <div class="modal-container modal-container--close">
       <div class="modal-container__modal modal">
-        <h2 class="modal__title title">Добавить в корзину</h2>
+        <h2 class="modal__title">
+          Добавить <br />
+          в корзину
+        </h2>
         <form
           class="modal__form"
           action="https://echo.htmlacademy.ru/"
@@ -496,34 +499,37 @@
               <li class="modal__item modal__item--size-s">
                 <label class="modal__control">
                   <input
-                    class="modal__input"
+                    class="visually-hidden modal__input"
                     type="radio"
                     name="size"
                     value="size-s"
                     checked
                   />
+                  <span class="modal__control-mark"></span>
                   <span class="modal__control-label">S</span>
                 </label>
               </li>
               <li class="modal__item modal__item--size-m">
                 <label class="modal__control">
                   <input
-                    class="modal__input"
+                    class="visually-hidden modal__input"
                     type="radio"
                     name="size"
                     value="size-m"
                   />
+                  <span class="modal__control-mark"></span>
                   <span class="modal__control-label">M</span>
                 </label>
               </li>
               <li class="modal__item modal__item--size-l">
                 <label class="modal__control">
                   <input
-                    class="modal__input"
+                    class="visually-hidden modal__input"
                     type="radio"
                     name="size"
                     value="size-l"
                   />
+                  <span class="modal__control-mark"></span>
                   <span class="modal__control-label">L</span>
                 </label>
               </li>
