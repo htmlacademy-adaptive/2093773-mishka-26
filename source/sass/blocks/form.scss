@@ -67,7 +67,7 @@
     position: relative;
 
     @media (min-width: $tablet-width) {
-      padding-top: 22px;
+      padding-top: 24px;
       padding-bottom: 14px;
     }
 
@@ -110,14 +110,8 @@
   }
 }
 
-.form__title-wrapper--additionally {
-  @media (min-width: $tablet-width) {
-    align-self: flex-start;
-    padding-top: 19px;
-  }
-}
-
 .form__title {
+  margin: 0;
   padding: 0;
   font-weight: 700;
   font-size: 17px;
@@ -160,6 +154,8 @@
 
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+      align-self: flex-start;
+      padding-top: 19px;
     }
   }
 }
@@ -247,6 +243,11 @@
   &--surname,
   &--patronymic {
     margin-bottom: 18px;
+    max-width: 698px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 21px;
+    }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 22px;
@@ -345,7 +346,7 @@
   }
 }
 
-.form__initials-wrapper {
+.form__label--initials {
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -414,7 +415,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 15px 17px;
+    padding: 14px 17px;
     font-size: 19px;
   }
 

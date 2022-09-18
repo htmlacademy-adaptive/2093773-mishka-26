@@ -162,7 +162,7 @@
   }
 
   &:active {
-    opacity: 30%;
+    color: rgba($color-default-black, 30%);
 
     .menu__link-img-search,
     .menu__link-img-basket {
