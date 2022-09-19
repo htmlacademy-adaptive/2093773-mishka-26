@@ -334,15 +334,18 @@
   height: 21px;
   background-image: url("../img/control/tick.svg");
   background-repeat: no-repeat;
-  background-position: 3px -20px;
-  background-size: 23px 65px;
+  background-position: 3px 3px;
+  background-size: 90%;
 
   @media (min-width: $tablet-width) {
     top: 13px;
     left: 7px;
-    width: 25px;
-    height: 25px;
-    background-size: 24px 65px;
+    width: 32px;
+    height: 22px;
+    background-image: url("../img/control/tick-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+    background-size: 95%;
   }
 }
 
