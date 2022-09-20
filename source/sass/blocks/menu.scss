@@ -72,13 +72,14 @@
   }
 }
 
-.menu--nojs .menu__toggle {
+.menu--no-js .menu__toggle {
   display: none;
 }
 
-.menu--nojs .menu__item,
-.menu--nojs .menu__link {
+.menu--no-js .menu__item,
+.menu--no-js .menu__link {
   display: block;
+  text-align: center;
 }
 
 .menu__list {
