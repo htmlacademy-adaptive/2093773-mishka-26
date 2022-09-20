@@ -35,5 +35,13 @@
     color: $color-default-white;
     background-color: $color-downy;
     border: none;
+
+    &:hover {
+      background-color: $color-puerto-rico;
+    }
+
+    &:active {
+      color: rgba(($color-default-white), 0.3);
+    }
   }
 }

@@ -11,8 +11,18 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="img/favicons/favicon-apple.png" />
     <link rel="manifest" href="manifest.webmanifest" />
-    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
+    <link
+      rel="preload"
+      href="fonts/opensans.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/opensansbold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header class="header header--darken">
@@ -22,14 +32,10 @@
             <source
               media="(min-width: 1024px)"
               srcset="./img/logo/mishka-logo-desktop.svg"
-              width="149"
-              height="72"
             />
             <source
               media="(min-width: 768px)"
               srcset="./img/logo/mishka-logo-tablet.svg"
-              width="113"
-              height="46"
             />
             <img
               class="header__image"
@@ -59,7 +65,11 @@
             </ul>
           </nav>
           <div class="menu__links">
-            <a class="menu__link menu__link--links menu__link--search" href="#">
+            <a
+              class="menu__link menu__link--links menu__link--search"
+              href="#"
+              aria-label="Поиск по сайту"
+            >
               <svg
                 class="menu__link-img-search"
                 aria-hidden="true"
@@ -123,13 +133,34 @@
                 <a class="card__image-link" href="#">
                   <picture>
                     <source
+                      type="image/webp"
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/product/product-bunny-desktop.webp,
+                        ./img/product/product-bunny-desktop@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/product/product-bunny-tablet.webp,
+                        ./img/product/product-bunny-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/product/product-bunny-mobile.webp,
+                        ./img/product/product-bunny-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
                       media="(min-width: 1024px)"
                       srcset="
                         ./img/product/product-bunny-desktop.jpg,
                         ./img/product/product-bunny-desktop@2x.jpg 2x
                       "
-                      width="316"
-                      height="462"
                     />
                     <source
                       media="(min-width: 768px)"
@@ -137,8 +168,6 @@
                         ./img/product/product-bunny-tablet.jpg,
                         ./img/product/product-bunny-tablet@2x.jpg 2x
                       "
-                      width="334"
-                      height="334"
                     />
                     <img
                       class="card__image"
@@ -187,13 +216,34 @@
                 <a class="card__image-link" href="#">
                   <picture>
                     <source
+                      type="image/webp"
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/product/product-basket-desktop.webp,
+                        ./img/product/product-basket-desktop@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/product/product-basket-tablet.webp,
+                        ./img/product/product-basket-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/product/product-basket-mobile.webp,
+                        ./img/product/product-basket-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
                       media="(min-width: 1024px)"
                       srcset="
                         ./img/product/product-basket-desktop.jpg,
                         ./img/product/product-basket-desktop@2x.jpg 2x
                       "
-                      width="316"
-                      height="462"
                     />
                     <source
                       media="(min-width: 768px)"
@@ -201,8 +251,6 @@
                         ./img/product/product-basket-tablet.jpg,
                         ./img/product/product-basket-tablet@2x.jpg 2x
                       "
-                      width="334"
-                      height="334"
                     />
                     <img
                       class="card__image"
@@ -251,13 +299,34 @@
                 <a class="card__image-link" href="#">
                   <picture>
                     <source
+                      type="image/webp"
+                      media="(min-width: 1024px)"
+                      srcset="
+                        ./img/product/product-big-basket-desktop.webp,
+                        ./img/product/product-big-basket-desktop@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./img/product/product-big-basket-tablet.webp,
+                        ./img/product/product-big-basket-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./img/product/product-big-basket-mobile.webp,
+                        ./img/product/product-big-basket-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
                       media="(min-width: 1024px)"
                       srcset="
                         ./img/product/product-big-basket-desktop.jpg,
                         ./img/product/product-big-basket-desktop@2x.jpg 2x
                       "
-                      width="316"
-                      height="462"
                     />
                     <source
                       media="(min-width: 768px)"
@@ -265,8 +334,6 @@
                         ./img/product/product-big-basket-tablet.jpg,
                         ./img/product/product-big-basket-tablet@2x.jpg 2x
                       "
-                      width="334"
-                      height="334"
                     />
                     <img
                       class="card__image"
@@ -319,15 +386,38 @@
             Процесс производства
           </h2>
           <div class="production__video-wrapper">
+            <!--Блок production__video-container предназначен для вставки видео; согласно ТЗ-->
+            <div class="production__video-container"></div>
             <picture>
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="
+                  ./img/video/video-desktop.webp,
+                  ./img/video/video-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  ./img/video/video-tablet.webp,
+                  ./img/video/video-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/webp"
+                srcset="
+                  ./img/video/video-mobile.webp,
+                  ./img/video/video-mobile@2x.webp 2x
+                "
+              />
               <source
                 media="(min-width: 1024px)"
                 srcset="
                   ./img/video/video-desktop.jpg,
                   ./img/video/video-desktop@2x.jpg 2x
                 "
-                width="683"
-                height="455"
               />
               <source
                 media="(min-width: 768px)"
@@ -335,8 +425,6 @@
                   ./img/video/video-tablet.jpg,
                   ./img/video/video-tablet@2x.jpg 2x
                 "
-                width="668"
-                height="455"
               />
               <img
                 class="production__video-image"
@@ -366,7 +454,11 @@
     <footer class="footer">
       <div class="footer__wrapper container">
         <div class="footer__logo">
-          <a class="footer__logo-link" href="index.html">
+          <a
+            class="footer__logo-link"
+            href="index.html"
+            aria-label="логотип Mishka"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
