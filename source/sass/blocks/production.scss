@@ -1,12 +1,12 @@
 .production {
-  padding: 15px 30px 57px 30px;
+  padding: 16px 30px 58px 30px;
 
   @media (min-width: $tablet-width) {
     padding: 37px 50px 64px 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 28px 50px 102px 50px;
+    padding: 28px 50px 104px 50px;
   }
 }
 
@@ -51,19 +51,19 @@
     background-position: 34px 50%;
 
     @media (min-width: $tablet-width) {
-      background-position: 40px 50%;
+      background-position: 40px 0;
     }
   }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
-    padding-left: 107px;
+    padding-left: 106px;
     font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
-    padding: 96px 110px 23px 79px;
+    padding: 96px 110px 26px 79px;
 
     &--camera {
       background-position: 80px 47px;
@@ -118,7 +118,7 @@
   line-height: 24px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 40px;
+    padding: 0 39px;
     font-size: 15px;
     line-height: 30px;
   }
@@ -134,13 +134,12 @@
   font-size: 18px;
 
   @media (min-width: $tablet-width) {
-    margin-right: 42px;
-    margin-left: 42px;
+    margin: 40px 42px 0 42px;
     font-size: 17px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 52px 56px 60px 80px;
+    margin: 49px 56px 58px 80px;
     width: 230px;
   }
 }

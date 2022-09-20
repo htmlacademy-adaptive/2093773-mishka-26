@@ -186,12 +186,13 @@
 
   &--list {
     @media (min-width: $tablet-width) {
-      padding: 20px 35px 20px 0;
+      margin: 0;
+      padding: 22px 37px 20px 0;
       font-size: 15px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 32px 34px;
+      padding: 33px 35px;
       font-size: 17px;
     }
   }
