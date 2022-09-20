@@ -566,6 +566,7 @@
 .form__button {
   margin-top: 30px;
   background-color: $color-default-white;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;

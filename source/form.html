@@ -22,14 +22,10 @@
             <source
               media="(min-width: 1024px)"
               srcset="./img/logo/mishka-logo-desktop.svg"
-              width="149"
-              height="72"
             />
             <source
               media="(min-width: 768px)"
               srcset="./img/logo/mishka-logo-tablet.svg"
-              width="113"
-              height="46"
             />
             <img
               class="header__image"
@@ -303,72 +299,68 @@
                 </ul>
               </div>
             </fieldset>
-            <div class="form__contacts form__point--darken">
-              <fieldset class="form__point">
-                <div class="form__point-wrapper form__point-wrapper--tel">
-                  <p class="form__title form__title--tel">тел</p>
-                  <span class="visually-hidden"
-                    >Введите ваш номер телефона.</span
+            <fieldset class="form__point form__point--darken">
+              <div class="form__point-wrapper form__point-wrapper--tel">
+                <p class="form__title form__title--tel">тел</p>
+                <span class="visually-hidden">Введите ваш номер телефона.</span>
+                <div class="form__phone">
+                  <label class="form__label">
+                    <input
+                      class="form__tel"
+                      type="tel"
+                      name="tel"
+                      placeholder="+7 ХХХ ХХХ ХХ ХХ*"
+                      required
+                    />
+                  </label>
+                  <svg
+                    class="form__icons"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Телефон"
                   >
-                  <div class="form__phone">
-                    <label class="form__label">
-                      <input
-                        class="form__tel"
-                        type="tel"
-                        name="tel"
-                        placeholder="+7 ХХХ ХХХ ХХ ХХ*"
-                        required
-                      />
-                    </label>
-                    <svg
-                      class="form__icons"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="25"
-                      height="24"
-                      viewBox="0 0 25 24"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      aria-label="Телефон"
-                    >
-                      <use href="./img/sprite.svg#icon-phone"></use>
-                    </svg>
-                  </div>
+                    <use href="./img/sprite.svg#icon-phone"></use>
+                  </svg>
                 </div>
-              </fieldset>
-              <fieldset class="form__point">
-                <div class="form__point-wrapper form__point-wrapper--email">
-                  <p class="form__title form__title--email">E-mail</p>
-                  <span class="visually-hidden">Введите ваш email.</span>
-                  <div class="form__email">
-                    <label class="form__label">
-                      <input
-                        class="form__mail"
-                        type="email"
-                        name="email"
-                        placeholder="Ваш Email*"
-                        required
-                      />
-                    </label>
-                    <svg
-                      class="form__icons form__icons--letter"
-                      aria-hidden="true"
-                      focusable="false"
-                      width="32"
-                      height="21"
-                      viewBox="0 0 32 21"
-                      fill="currentColor"
-                      xmlns="http://www.w3.org/2000/svg"
-                      role="img"
-                      aria-label="Письмо"
-                    >
-                      <use href="./img/sprite.svg#icon-letter"></use>
-                    </svg>
-                  </div>
+              </div>
+            </fieldset>
+            <fieldset class="form__point form__point--darken">
+              <div class="form__point-wrapper form__point-wrapper--email">
+                <p class="form__title form__title--email">E-mail</p>
+                <span class="visually-hidden">Введите ваш email.</span>
+                <div class="form__email">
+                  <label class="form__label">
+                    <input
+                      class="form__mail"
+                      type="email"
+                      name="email"
+                      placeholder="Ваш Email*"
+                      required
+                    />
+                  </label>
+                  <svg
+                    class="form__icons form__icons--letter"
+                    aria-hidden="true"
+                    focusable="false"
+                    width="32"
+                    height="21"
+                    viewBox="0 0 32 21"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img"
+                    aria-label="Письмо"
+                  >
+                    <use href="./img/sprite.svg#icon-letter"></use>
+                  </svg>
                 </div>
-              </fieldset>
-            </div>
+              </div>
+            </fieldset>
             <fieldset class="form__point">
               <div
                 class="form__point-wrapper form__point-wrapper--additionally"

@@ -100,16 +100,24 @@
   &--interior {
     position: relative;
     background-color: $color-downy;
+
+    &:hover {
+      background-color: $color-downy-lighten;
+    }
   }
 
   &--toys {
     position: relative;
     background-color: $color-puerto-rico;
+
+    &:hover {
+      background-color: $color-puerto-rico-darken;
+    }
   }
 }
 
 .welcome__link {
-  padding: 24px 160px 31px 30px;
+  padding: 24px 105px 31px 30px;
   width: 100%;
   font-weight: 700;
   font-size: 19px;
@@ -121,51 +129,57 @@
   &:hover {
     transform: translateY(-5px);
     background-color: inherit;
+
+    .welcome__link-img {
+      opacity: 70%;
+    }
+  }
+
+  &:active {
+    background-color: inherit;
+
+    .welcome__link-img {
+      opacity: 30%;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px 167px 33px 36px;
+    padding: 25px 105px 33px 36px;
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.welcome__link-img {
+  position: absolute;
+  color: $color-dark-cyan;
+  opacity: 50%;
 
   &--interior {
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icons/interior.svg");
-      background-repeat: no-repeat;
-      top: 23px;
-      right: 36px;
-      width: 40px;
-      height: 62px;
+    top: 23px;
+    right: 37px;
+    width: 40px;
+    height: 62px;
 
-      @media (min-width: $tablet-width) {
-        top: 30px;
-      }
+    @media (min-width: $tablet-width) {
+      top: 30px;
     }
   }
 
   &--toys {
-    &::after {
-      position: absolute;
-      content: "";
-      background-image: url("../img/icons/toy.svg");
-      background-repeat: no-repeat;
-      top: 21px;
-      right: 27px;
-      width: 60px;
-      height: 60px;
+    top: 21px;
+    right: 27px;
+    width: 60px;
+    height: 60px;
 
-      @media (min-width: $tablet-width) {
-        top: 31px;
-        right: 33px;
-      }
+    @media (min-width: $tablet-width) {
+      top: 31px;
+      right: 35px;
     }
   }
 }
 
 .welcome__link-text {
-  max-width: 130px;
+  max-width: auto;
   display: block;
 }
