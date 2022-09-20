@@ -65,7 +65,11 @@
             </ul>
           </nav>
           <div class="menu__links">
-            <a class="menu__link menu__link--links menu__link--search" href="#">
+            <a
+              class="menu__link menu__link--links menu__link--search"
+              href="#"
+              aria-label="Поиск по сайту"
+            >
               <svg
                 class="menu__link-img-search"
                 aria-hidden="true"
@@ -389,11 +393,17 @@
             <source
               type="image/webp"
               media="(min-width: 768px)"
-              srcset="./img/map/map-tablet.webp, ./img/map/map-tablet@2x.webp 2x"
+              srcset="
+                ./img/map/map-tablet.webp,
+                ./img/map/map-tablet@2x.webp 2x
+              "
             />
             <source
               type="image/webp"
-              srcset="./img/map/map-mobile.webp, ./img/map/map-mobile@2x.webp 2x"
+              srcset="
+                ./img/map/map-mobile.webp,
+                ./img/map/map-mobile@2x.webp 2x
+              "
             />
             <source
               media="(min-width: 1150px)"
@@ -436,7 +446,11 @@
     <footer class="footer">
       <div class="footer__wrapper container">
         <div class="footer__logo">
-          <a class="footer__logo-link" href="index.html">
+          <a
+            class="footer__logo-link"
+            href="index.html"
+            aria-label="логотип Mishka"
+          >
             <svg
               aria-hidden="true"
               focusable="false"

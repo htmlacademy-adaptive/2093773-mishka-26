@@ -110,10 +110,12 @@
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
+      max-width: 450px;
     }
 
     @media (min-width: $desktop-width) {
       font-size: 17px;
+      max-width: 650px;
     }
   }
 
