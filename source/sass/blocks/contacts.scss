@@ -118,6 +118,7 @@
 
 .contacts__map-wrapper {
   margin: 0 -30px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 -50px;
@@ -139,9 +140,7 @@
 
 .contacts__map-image {
   display: block;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
+  margin: 0 auto;
   width: 320px;
   height: 454px;
   z-index: -1;
@@ -167,6 +166,13 @@
     top: 0;
     right: 0;
   }
+}
+
+.contacts__map-script {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .contacts__button {
